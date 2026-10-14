@@ -1,0 +1,760 @@
+{
+  "hero": {
+    "photographer": "Rafa Sanfilippo",
+    "photoId": "cWLEzYAcI3Q",
+    "originalWidth": 4000,
+    "originalHeight": 6000,
+    "cdnId": "photo-1772634734681-9db90f08684c",
+    "sourceUrl": "https://unsplash.com/photos/a-bride-and-groom-laughing-together-on-their-wedding-day-cWLEzYAcI3Q",
+    "alt": "Bride and groom laughing together in a black and white wedding portrait",
+    "width": 2400,
+    "height": 3600,
+    "sourceWidth": 2400,
+    "sourceHeight": 3600,
+    "sourceBytes": 2328691,
+    "sourceSha256": "964df9e87962cfd790a7ca99294569d553e908c5240ac11d602c70eee68dfb34",
+    "downloadUrl": "https://images.unsplash.com/photo-1772634734681-9db90f08684c?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "hero-480.webp",
+        "width": 480,
+        "height": 720,
+        "format": "webp",
+        "bytes": 26750
+      },
+      {
+        "file": "hero-480.avif",
+        "width": 480,
+        "height": 720,
+        "format": "avif",
+        "bytes": 22253
+      },
+      {
+        "file": "hero-800.webp",
+        "width": 800,
+        "height": 1200,
+        "format": "webp",
+        "bytes": 69786
+      },
+      {
+        "file": "hero-800.avif",
+        "width": 800,
+        "height": 1200,
+        "format": "avif",
+        "bytes": 53541
+      },
+      {
+        "file": "hero-1200.webp",
+        "width": 1200,
+        "height": 1800,
+        "format": "webp",
+        "bytes": 200038
+      },
+      {
+        "file": "hero-1200.avif",
+        "width": 1200,
+        "height": 1800,
+        "format": "avif",
+        "bytes": 141342
+      },
+      {
+        "file": "hero-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "format": "webp",
+        "bytes": 422866
+      },
+      {
+        "file": "hero-1600.avif",
+        "width": 1600,
+        "height": 2400,
+        "format": "avif",
+        "bytes": 286450
+      }
+    ]
+  },
+  "still-water": {
+    "photographer": "Sabesh Photography LTD",
+    "photoId": "gpGfPhSr3rQ",
+    "originalWidth": 8192,
+    "originalHeight": 5464,
+    "cdnId": "photo-1728348829982-7f19100827a8",
+    "sourceUrl": "https://unsplash.com/photos/a-bride-and-groom-are-standing-on-a-dock-gpGfPhSr3rQ",
+    "alt": "Bride and groom standing on a wooden jetty in the Lake District",
+    "width": 2400,
+    "height": 1601,
+    "sourceWidth": 2400,
+    "sourceHeight": 1601,
+    "sourceBytes": 676419,
+    "sourceSha256": "d449b4666c8411e71832c46f053b4a0668760c3da987b78d7250e5b5f61b7c20",
+    "downloadUrl": "https://images.unsplash.com/photo-1728348829982-7f19100827a8?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "still-water-480.webp",
+        "width": 480,
+        "height": 320,
+        "format": "webp",
+        "bytes": 19980
+      },
+      {
+        "file": "still-water-480.avif",
+        "width": 480,
+        "height": 320,
+        "format": "avif",
+        "bytes": 13213
+      },
+      {
+        "file": "still-water-800.webp",
+        "width": 800,
+        "height": 534,
+        "format": "webp",
+        "bytes": 49718
+      },
+      {
+        "file": "still-water-800.avif",
+        "width": 800,
+        "height": 534,
+        "format": "avif",
+        "bytes": 31809
+      },
+      {
+        "file": "still-water-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "format": "webp",
+        "bytes": 98758
+      },
+      {
+        "file": "still-water-1200.avif",
+        "width": 1200,
+        "height": 800,
+        "format": "avif",
+        "bytes": 63034
+      },
+      {
+        "file": "still-water-1600.webp",
+        "width": 1600,
+        "height": 1067,
+        "format": "webp",
+        "bytes": 156372
+      },
+      {
+        "file": "still-water-1600.avif",
+        "width": 1600,
+        "height": 1067,
+        "format": "avif",
+        "bytes": 98866
+      }
+    ]
+  },
+  "city-softened": {
+    "photographer": "Howard Walsh",
+    "photoId": "P_jDtRMQxL0",
+    "originalWidth": 3373,
+    "originalHeight": 5060,
+    "cdnId": "photo-1775664377581-7ca46ddb619b",
+    "sourceUrl": "https://unsplash.com/photos/bride-and-groom-posing-on-tower-bridge-P_jDtRMQxL0",
+    "alt": "A bride being photographed beneath the arches of Tower Bridge in London",
+    "width": 2400,
+    "height": 3600,
+    "sourceWidth": 2400,
+    "sourceHeight": 3600,
+    "sourceBytes": 1276377,
+    "sourceSha256": "84e0154614da44af016e91d31d1e8227a65b4f0f142edab4412022d11f532d40",
+    "downloadUrl": "https://images.unsplash.com/photo-1775664377581-7ca46ddb619b?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "city-softened-480.webp",
+        "width": 480,
+        "height": 720,
+        "format": "webp",
+        "bytes": 36960
+      },
+      {
+        "file": "city-softened-480.avif",
+        "width": 480,
+        "height": 720,
+        "format": "avif",
+        "bytes": 23946
+      },
+      {
+        "file": "city-softened-800.webp",
+        "width": 800,
+        "height": 1200,
+        "format": "webp",
+        "bytes": 83408
+      },
+      {
+        "file": "city-softened-800.avif",
+        "width": 800,
+        "height": 1200,
+        "format": "avif",
+        "bytes": 55923
+      },
+      {
+        "file": "city-softened-1200.webp",
+        "width": 1200,
+        "height": 1800,
+        "format": "webp",
+        "bytes": 153498
+      },
+      {
+        "file": "city-softened-1200.avif",
+        "width": 1200,
+        "height": 1800,
+        "format": "avif",
+        "bytes": 109157
+      },
+      {
+        "file": "city-softened-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "format": "webp",
+        "bytes": 226432
+      },
+      {
+        "file": "city-softened-1600.avif",
+        "width": 1600,
+        "height": 2400,
+        "format": "avif",
+        "bytes": 170081
+      }
+    ]
+  },
+  "celebration": {
+    "photographer": "Ben Atkins",
+    "photoId": "CkQxfER9FvA",
+    "originalWidth": 3185,
+    "originalHeight": 3981,
+    "cdnId": "photo-1722805740128-b01efd09b4b7",
+    "sourceUrl": "https://unsplash.com/photos/a-bride-and-groom-are-posing-for-a-picture-CkQxfER9FvA",
+    "alt": "Newlyweds dancing together beneath red confetti",
+    "width": 2400,
+    "height": 3000,
+    "sourceWidth": 2400,
+    "sourceHeight": 3000,
+    "sourceBytes": 613214,
+    "sourceSha256": "6494e83785b28d526d67fdb778787b78347184616e1492855207d3d51260a4ea",
+    "downloadUrl": "https://images.unsplash.com/photo-1722805740128-b01efd09b4b7?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "celebration-480.webp",
+        "width": 480,
+        "height": 600,
+        "format": "webp",
+        "bytes": 16124
+      },
+      {
+        "file": "celebration-480.avif",
+        "width": 480,
+        "height": 600,
+        "format": "avif",
+        "bytes": 14096
+      },
+      {
+        "file": "celebration-800.webp",
+        "width": 800,
+        "height": 1000,
+        "format": "webp",
+        "bytes": 30104
+      },
+      {
+        "file": "celebration-800.avif",
+        "width": 800,
+        "height": 1000,
+        "format": "avif",
+        "bytes": 26101
+      },
+      {
+        "file": "celebration-1200.webp",
+        "width": 1200,
+        "height": 1500,
+        "format": "webp",
+        "bytes": 48080
+      },
+      {
+        "file": "celebration-1200.avif",
+        "width": 1200,
+        "height": 1500,
+        "format": "avif",
+        "bytes": 42462
+      },
+      {
+        "file": "celebration-1600.webp",
+        "width": 1600,
+        "height": 2000,
+        "format": "webp",
+        "bytes": 69372
+      },
+      {
+        "file": "celebration-1600.avif",
+        "width": 1600,
+        "height": 2000,
+        "format": "avif",
+        "bytes": 62591
+      }
+    ]
+  },
+  "bridal": {
+    "photographer": "Alexander Mass",
+    "photoId": "HVTDyWXQkrA",
+    "originalWidth": 4000,
+    "originalHeight": 6000,
+    "cdnId": "photo-1773688199736-579b6928e417",
+    "sourceUrl": "https://unsplash.com/photos/bride-in-a-wedding-dress-looking-away-HVTDyWXQkrA",
+    "alt": "A bride looking towards the camera in soft black and white light",
+    "width": 2400,
+    "height": 3600,
+    "sourceWidth": 2400,
+    "sourceHeight": 3600,
+    "sourceBytes": 1221628,
+    "sourceSha256": "153bfc4466a7b1354a39933145aea75cfc168bdf4d87c2f2c7eefc8ba8fcf474",
+    "downloadUrl": "https://images.unsplash.com/photo-1773688199736-579b6928e417?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "bridal-480.webp",
+        "width": 480,
+        "height": 720,
+        "format": "webp",
+        "bytes": 8152
+      },
+      {
+        "file": "bridal-480.avif",
+        "width": 480,
+        "height": 720,
+        "format": "avif",
+        "bytes": 10100
+      },
+      {
+        "file": "bridal-800.webp",
+        "width": 800,
+        "height": 1200,
+        "format": "webp",
+        "bytes": 15890
+      },
+      {
+        "file": "bridal-800.avif",
+        "width": 800,
+        "height": 1200,
+        "format": "avif",
+        "bytes": 16196
+      },
+      {
+        "file": "bridal-1200.webp",
+        "width": 1200,
+        "height": 1800,
+        "format": "webp",
+        "bytes": 28796
+      },
+      {
+        "file": "bridal-1200.avif",
+        "width": 1200,
+        "height": 1800,
+        "format": "avif",
+        "bytes": 30485
+      },
+      {
+        "file": "bridal-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "format": "webp",
+        "bytes": 47714
+      },
+      {
+        "file": "bridal-1600.avif",
+        "width": 1600,
+        "height": 2400,
+        "format": "avif",
+        "bytes": 63692
+      }
+    ]
+  },
+  "table": {
+    "photographer": "Ben Atkins",
+    "photoId": "zjJiX9txwRU",
+    "originalWidth": 3757,
+    "originalHeight": 5010,
+    "cdnId": "photo-1775126964424-913480443772",
+    "sourceUrl": "https://unsplash.com/photos/a-beautifully-set-table-for-a-wedding-reception-zjJiX9txwRU",
+    "alt": "Wedding breakfast table with flowers, wine and place settings",
+    "width": 2400,
+    "height": 3200,
+    "sourceWidth": 2400,
+    "sourceHeight": 3200,
+    "sourceBytes": 787034,
+    "sourceSha256": "1dc5bd75ce68f00b02c6740581b6b8b60e93246f26c0a3417e15702ebf233398",
+    "downloadUrl": "https://images.unsplash.com/photo-1775126964424-913480443772?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "table-480.webp",
+        "width": 480,
+        "height": 640,
+        "format": "webp",
+        "bytes": 29636
+      },
+      {
+        "file": "table-480.avif",
+        "width": 480,
+        "height": 640,
+        "format": "avif",
+        "bytes": 20130
+      },
+      {
+        "file": "table-800.webp",
+        "width": 800,
+        "height": 1067,
+        "format": "webp",
+        "bytes": 57744
+      },
+      {
+        "file": "table-800.avif",
+        "width": 800,
+        "height": 1067,
+        "format": "avif",
+        "bytes": 39703
+      },
+      {
+        "file": "table-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "format": "webp",
+        "bytes": 96798
+      },
+      {
+        "file": "table-1200.avif",
+        "width": 1200,
+        "height": 1600,
+        "format": "avif",
+        "bytes": 68152
+      },
+      {
+        "file": "table-1600.webp",
+        "width": 1600,
+        "height": 2133,
+        "format": "webp",
+        "bytes": 139084
+      },
+      {
+        "file": "table-1600.avif",
+        "width": 1600,
+        "height": 2133,
+        "format": "avif",
+        "bytes": 98596
+      }
+    ]
+  },
+  "lake-sunset": {
+    "photographer": "c k",
+    "photoId": "o6u_mqxYGDg",
+    "originalWidth": 3100,
+    "originalHeight": 1744,
+    "cdnId": "photo-1758727654358-a90614d694eb",
+    "sourceUrl": "https://unsplash.com/photos/couple-in-wedding-attire-by-a-serene-lake-at-sunset-o6u_mqxYGDg",
+    "alt": "Bride and groom standing together beside a lake in evening light",
+    "width": 2400,
+    "height": 1350,
+    "sourceWidth": 2400,
+    "sourceHeight": 1350,
+    "sourceBytes": 828005,
+    "sourceSha256": "7d66fbc8f1aa371ca106d0b8e33b59c210edbe0b5d1ed79a855493e9494fa3c4",
+    "downloadUrl": "https://images.unsplash.com/photo-1758727654358-a90614d694eb?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "lake-sunset-480.webp",
+        "width": 480,
+        "height": 270,
+        "format": "webp",
+        "bytes": 19516
+      },
+      {
+        "file": "lake-sunset-480.avif",
+        "width": 480,
+        "height": 270,
+        "format": "avif",
+        "bytes": 13195
+      },
+      {
+        "file": "lake-sunset-800.webp",
+        "width": 800,
+        "height": 450,
+        "format": "webp",
+        "bytes": 55518
+      },
+      {
+        "file": "lake-sunset-800.avif",
+        "width": 800,
+        "height": 450,
+        "format": "avif",
+        "bytes": 34521
+      },
+      {
+        "file": "lake-sunset-1200.webp",
+        "width": 1200,
+        "height": 675,
+        "format": "webp",
+        "bytes": 122986
+      },
+      {
+        "file": "lake-sunset-1200.avif",
+        "width": 1200,
+        "height": 675,
+        "format": "avif",
+        "bytes": 76081
+      },
+      {
+        "file": "lake-sunset-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "format": "webp",
+        "bytes": 205910
+      },
+      {
+        "file": "lake-sunset-1600.avif",
+        "width": 1600,
+        "height": 900,
+        "format": "avif",
+        "bytes": 128315
+      }
+    ]
+  },
+  "evening": {
+    "photographer": "Foto Pettine",
+    "photoId": "AXaQzYRIb4w",
+    "originalWidth": 3923,
+    "originalHeight": 2615,
+    "cdnId": "photo-1571727226062-18a510ab1211",
+    "sourceUrl": "https://unsplash.com/photos/wedding-couple-on-focus-photography-AXaQzYRIb4w",
+    "alt": "Wedding couple beside a pool in dramatic backlit evening mist",
+    "width": 2400,
+    "height": 1600,
+    "sourceWidth": 2400,
+    "sourceHeight": 1600,
+    "sourceBytes": 510553,
+    "sourceSha256": "a1ed785bda6254792ab55ca54db84b0d2e81b5dfca21f0f244d4931e5a775717",
+    "downloadUrl": "https://images.unsplash.com/photo-1571727226062-18a510ab1211?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "evening-480.webp",
+        "width": 480,
+        "height": 320,
+        "format": "webp",
+        "bytes": 7074
+      },
+      {
+        "file": "evening-480.avif",
+        "width": 480,
+        "height": 320,
+        "format": "avif",
+        "bytes": 9211
+      },
+      {
+        "file": "evening-800.webp",
+        "width": 800,
+        "height": 533,
+        "format": "webp",
+        "bytes": 16486
+      },
+      {
+        "file": "evening-800.avif",
+        "width": 800,
+        "height": 533,
+        "format": "avif",
+        "bytes": 17328
+      },
+      {
+        "file": "evening-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "format": "webp",
+        "bytes": 32806
+      },
+      {
+        "file": "evening-1200.avif",
+        "width": 1200,
+        "height": 800,
+        "format": "avif",
+        "bytes": 31097
+      },
+      {
+        "file": "evening-1600.webp",
+        "width": 1600,
+        "height": 1067,
+        "format": "webp",
+        "bytes": 53576
+      },
+      {
+        "file": "evening-1600.avif",
+        "width": 1600,
+        "height": 1067,
+        "format": "avif",
+        "bytes": 49370
+      }
+    ]
+  },
+  "hero-landscape": {
+    "photographer": "Rafa Sanfilippo",
+    "sourceUrl": "https://unsplash.com/photos/a-bride-and-groom-laughing-together-on-their-wedding-day-cWLEzYAcI3Q",
+    "sourceStem": "hero",
+    "width": 2000,
+    "height": 1600,
+    "crop": {
+      "aspectRatio": "5:4",
+      "centering": [
+        0.5,
+        0.3
+      ]
+    },
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "hero-landscape-480.webp",
+        "width": 480,
+        "height": 384,
+        "format": "webp",
+        "bytes": 14182
+      },
+      {
+        "file": "hero-landscape-480.avif",
+        "width": 480,
+        "height": 384,
+        "format": "avif",
+        "bytes": 13727
+      },
+      {
+        "file": "hero-landscape-800.webp",
+        "width": 800,
+        "height": 640,
+        "format": "webp",
+        "bytes": 37552
+      },
+      {
+        "file": "hero-landscape-800.avif",
+        "width": 800,
+        "height": 640,
+        "format": "avif",
+        "bytes": 31462
+      },
+      {
+        "file": "hero-landscape-1200.webp",
+        "width": 1200,
+        "height": 960,
+        "format": "webp",
+        "bytes": 113754
+      },
+      {
+        "file": "hero-landscape-1200.avif",
+        "width": 1200,
+        "height": 960,
+        "format": "avif",
+        "bytes": 80738
+      },
+      {
+        "file": "hero-landscape-1600.webp",
+        "width": 1600,
+        "height": 1280,
+        "format": "webp",
+        "bytes": 232730
+      },
+      {
+        "file": "hero-landscape-1600.avif",
+        "width": 1600,
+        "height": 1280,
+        "format": "avif",
+        "bytes": 161562
+      }
+    ]
+  },
+  "social": {
+    "file": "social.jpg",
+    "sourceStem": "hero",
+    "width": 1200,
+    "height": 630,
+    "bytes": 136769,
+    "photographer": "Rafa Sanfilippo",
+    "sourceUrl": "https://unsplash.com/photos/a-bride-and-groom-laughing-together-on-their-wedding-day-cWLEzYAcI3Q",
+    "crop": {
+      "aspectRatio": "1200:630",
+      "centering": [
+        0.5,
+        0.33
+      ]
+    }
+  }
+}

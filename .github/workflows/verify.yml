@@ -1,0 +1,21 @@
+name: Verify static website
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Generate static pages and compact stylesheet
+        run: python3 scripts/build.py
+      - name: Verify links, metadata and image variants
+        run: python3 tests/verify.py
+      - name: Check JavaScript syntax
+        run: node --check assets/js/main.js
+      - name: Check generated output is current
+        run: git diff --exit-code
