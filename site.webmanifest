@@ -1,0 +1,16 @@
+{
+  "name": "Maeve Arden Photography",
+  "short_name": "Maeve Arden",
+  "start_url": "./index.html",
+  "display": "browser",
+  "background_color": "#f7f5ef",
+  "theme_color": "#f7f5ef",
+  "icons": [
+    {
+      "src": "assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

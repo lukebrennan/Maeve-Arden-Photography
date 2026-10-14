@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lukebrennan.github.io/Maeve-Arden-Photography/sitemap.xml
