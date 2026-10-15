@@ -3,9 +3,12 @@ from pathlib import Path
 from html import escape
 import json
 import re
+import hashlib
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://lukebrennan.github.io/Maeve-Arden-Photography/'
+LOGO_VERSION = hashlib.sha256((ROOT/'assets/icons/logo-mark.svg').read_bytes()).hexdigest()[:8]
+FAVICON_VERSION = hashlib.sha256((ROOT/'assets/icons/favicon.svg').read_bytes()).hexdigest()[:8]
 
 # Keep the maintained CSS readable and the served stylesheet compact.
 css_source = (ROOT / 'src/style.css').read_text()
@@ -42,7 +45,7 @@ def arrow():
     return '<span aria-hidden="true">↗</span>'
 
 def brand(prefix=''):
-    return f'<a class="brand" href="{prefix}index.html" aria-label="Maeve Arden Photography home"><img src="{prefix}assets/icons/logo-mark.svg" width="38" height="38" alt=""><span><span class="brand-name">Maeve Arden</span><span class="brand-sub">Photography</span></span></a>'
+    return f'<a class="brand" href="{prefix}index.html" aria-label="Maeve Arden Photography home"><img src="{prefix}assets/icons/logo-mark.svg?v={LOGO_VERSION}" width="38" height="38" alt=""><span><span class="brand-name">Maeve Arden</span><span class="brand-sub">Photography</span></span></a>'
 
 def nav(prefix, active, mobile=False):
     links = [('portfolio', 'Selected work'), ('weddings', 'The experience'), ('about', 'About'), ('journal', 'Journal')]
@@ -76,7 +79,7 @@ def page(path, title, desc, body, active='', image='hero', kind='WebPage', crumb
     robots = 'noindex,follow' if path == '404.html' else 'index,follow,max-image-preview:large'
     preload = f'<link rel="preload" as="image" type="image/avif" href="{prefix}assets/images/hero-landscape-800.avif" imagesrcset="{prefix}assets/images/hero-landscape-480.avif 480w, {prefix}assets/images/hero-landscape-800.avif 800w, {prefix}assets/images/hero-landscape-1200.avif 1200w, {prefix}assets/images/hero-landscape-1600.avif 1600w" imagesizes="(max-width: 760px) calc(100vw - 40px), 55vw" fetchpriority="high">' if path=='index.html' else ''
     html = f'''<!doctype html>
-<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)}</title><meta name="description" content="{escape(desc, quote=True)}"><meta name="robots" content="{robots}"><meta name="theme-color" content="#f7f5ef"><link rel="canonical" href="{url}"><meta property="og:type" content="{'article' if kind=='Article' else 'website'}"><meta property="og:title" content="{escape(title, quote=True)}"><meta property="og:description" content="{escape(desc, quote=True)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}assets/images/social.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Bride and groom laughing together — Maeve Arden Photography concept"><meta property="og:locale" content="en_GB"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/svg+xml" href="{prefix}assets/icons/favicon.svg"><link rel="manifest" href="{prefix}site.webmanifest">{preload}<link rel="stylesheet" href="{prefix}assets/css/style.css"><script type="application/ld+json">{json.dumps({'@context':'https://schema.org','@graph':graph}, ensure_ascii=False)}</script><script src="{prefix}assets/js/main.js" defer></script></head><body data-asset-prefix="{prefix}">{header(prefix,active)}<main id="main" tabindex="-1">{body}</main>{footer(prefix)}{lightbox(prefix) if lightbox_needed else ''}{'<a class="mobile-enquire" href="'+prefix+'contact.html">Check your date '+arrow()+'</a>' if active!='contact' else ''}</body></html>'''
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)}</title><meta name="description" content="{escape(desc, quote=True)}"><meta name="robots" content="{robots}"><meta name="theme-color" content="#f7f5ef"><link rel="canonical" href="{url}"><meta property="og:type" content="{'article' if kind=='Article' else 'website'}"><meta property="og:title" content="{escape(title, quote=True)}"><meta property="og:description" content="{escape(desc, quote=True)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}assets/images/social.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Bride and groom laughing together — Maeve Arden Photography concept"><meta property="og:locale" content="en_GB"><meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/svg+xml" href="{prefix}assets/icons/favicon.svg?v={FAVICON_VERSION}"><link rel="manifest" href="{prefix}site.webmanifest">{preload}<link rel="stylesheet" href="{prefix}assets/css/style.css"><script type="application/ld+json">{json.dumps({'@context':'https://schema.org','@graph':graph}, ensure_ascii=False)}</script><script src="{prefix}assets/js/main.js" defer></script></head><body data-asset-prefix="{prefix}">{header(prefix,active)}<main id="main" tabindex="-1">{body}</main>{footer(prefix)}{lightbox(prefix) if lightbox_needed else ''}{'<a class="mobile-enquire" href="'+prefix+'contact.html">Check your date '+arrow()+'</a>' if active!='contact' else ''}</body></html>'''
     if path == '404.html':
         # GitHub serves 404.html at arbitrary nested URLs. Keep the error page
         # self-contained and point recovery links at the real project root.
@@ -174,5 +177,5 @@ page('404.html','Page Not Found','This page could not be found. Return to the Ma
 
 (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{u}</loc></url>\n' for u in PAGES)+'</urlset>\n')
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'sitemap.xml\n')
-(ROOT/'site.webmanifest').write_text(json.dumps({'name':'Maeve Arden Photography','short_name':'Maeve Arden','start_url':'./index.html','display':'browser','background_color':'#f7f5ef','theme_color':'#f7f5ef','icons':[{'src':'assets/icons/favicon.svg','sizes':'any','type':'image/svg+xml','purpose':'any'}]},indent=2)+'\n')
+(ROOT/'site.webmanifest').write_text(json.dumps({'name':'Maeve Arden Photography','short_name':'Maeve Arden','start_url':'./index.html','display':'browser','background_color':'#f7f5ef','theme_color':'#f7f5ef','icons':[{'src':'assets/icons/favicon.svg?v='+FAVICON_VERSION,'sizes':'any','type':'image/svg+xml','purpose':'any'}]},indent=2)+'\n')
 print(f'Generated {len(PAGES)+1} pages, sitemap, robots and manifest.')
