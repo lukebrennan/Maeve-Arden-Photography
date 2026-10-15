@@ -2,7 +2,7 @@
 
 An editorial wedding photography website concept, designed and developed by Luke Brennan. Maeve Arden is a fictional brand; the photographs are credited stock images and the enquiry form is a transparent browser-only demonstration.
 
-A blue photographic folio replaces the original V2 identity: a full-name wordmark, locally hosted Geologica type, unequal image pairings and a place selector that changes the photographs and story links. The portfolio remains a complete, lightweight static website.
+A cream-and-charcoal photographic folio pairs a refined Bodoni Moda wordmark and headings with clear Geologica UI, unequal image pairings and a place selector that changes the photographs and story links. The portfolio remains a complete, lightweight static website.
 
 ## Experience
 
@@ -16,7 +16,7 @@ A blue photographic folio replaces the original V2 identity: a full-name wordmar
 
 ## Performance and SEO
 
-No framework, third-party font requests, analytics, stock-image CDN calls or runtime dependencies. One 25 KB Latin variable font is hosted locally under the SIL Open Font License. The generated pages work on a simple static server and use GitHub Pages-compatible relative paths. The 404 page has inline styles and absolute recovery links so it works at nested missing URLs.
+No framework, third-party font requests, analytics, stock-image CDN calls or runtime dependencies. Two Latin WOFF2 fonts total about 40 KB: Geologica for body/UI and Bodoni Moda Roman 400 for editorial headings. Both are hosted locally under the SIL Open Font License. The generated pages work on a simple static server and use GitHub Pages-compatible relative paths. The 404 page has inline styles and absolute recovery links so it works at nested missing URLs.
 
 Every photograph is served locally in AVIF with responsive WebP fallback, at 480, 800, 1200 and 1600 pixels. The homepage begins with the landscape source, with responsive art direction for smaller screens. The chosen image is prioritised and preloaded; below-the-fold images are lazy-loaded, with intrinsic dimensions and CSS aspect ratios to reserve their space.
 

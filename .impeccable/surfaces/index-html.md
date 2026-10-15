@@ -11,9 +11,9 @@ Mode: Experience. Supporting collection pages persuade, articles read, and the e
 
 ## Direction contract
 
-THESIS: A destination photographer's unfolding folio. Unequal photographs and a place index carry the opening; reject cream-and-sage italic headlines and repeated marketing cards.
+THESIS: A destination photographer's unfolding folio. Unequal photographs and a place index carry the opening; preserve the photography-led layout and avoid repeated marketing cards. The user now pins cream, dark grey and an elegant editorial finish.
 
-OWN-WORLD: Lake-blue ground #dce6ea, deep ink-blue #254b60, cool white #f5f7f6, dark ink #243239. Local Geologica, normal-case wordmark, flat underlined navigation, generous image boundaries and narrow practical margins. No boxed monogram in the header.
+OWN-WORLD: Cream ground #f7f5ef, charcoal #343330, ivory #fdfbf7 and warm dark ink #302f2c. Local Bodoni Moda for the normal-case wordmark and restrained headings, Geologica for body and UI, flat underlined navigation, generous image boundaries and narrow practical margins. No boxed monogram in the header.
 
 STORY: See people within places, explore three credited visual studies, understand relaxed coverage and transparent illustrative pricing, then preview a date enquiry.
 

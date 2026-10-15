@@ -46,3 +46,8 @@ One design detector run identified undersized functional text, journal heading h
 No Lighthouse score, field Core Web Vitals result or real booking availability is claimed. Enquiry remains an explicitly labelled browser-only preview.
 
 Independent Impeccable finish review: **ship**. All 19 final captures were valid. The review verified type, colour, photo framing, the place selector, responsive adaptation, pricing/enquiry honesty, next-story navigation and journal hierarchy. Three material findings were corrected and rescored resolved. Browser keyboard checks also confirmed mobile-menu Escape, gallery arrow-key progression and focus return after Escape.
+
+
+## Cream and charcoal refinement
+
+At the user's request, restored cream (#f7f5ef), ivory and dark grey, retaining the approved photographic folio. Added local Bodoni Moda Roman 400 for the full-name wordmark and editorial headings; Geologica remains the body and functional UI face. The additional WOFF2 is 14,556 bytes. Mobile titles are restrained at 32px. Form boundary contrast was strengthened with a separate control token. Body, muted text, inverse text and form boundaries pass their applicable contrast thresholds. No interactions, photographs or factual content changed.

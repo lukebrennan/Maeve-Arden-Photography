@@ -1,114 +1,116 @@
 ---
 name: Maeve Arden Photography
-description: A cool, photograph-led folio with a compact modern voice.
+description: A cream-and-charcoal photographic folio with refined editorial display
+  type.
 colors:
-  ground: "#dce6ea"
-  paper: "#f5f7f6"
-  ink: "#243239"
-  muted: "#4c606b"
-  blue: "#254b60"
-  blue-hover: "#17394c"
-  line: "#a5b7c0"
-  light-line: "#6d8a9b"
-  inverse-muted: "#cedde4"
+  ground: "#f7f5ef"
+  paper: "#fdfbf7"
+  ink: "#302f2c"
+  muted: "#67625b"
+  charcoal: "#343330"
+  charcoal-hover: "#22221f"
+  line: "#c9c1b5"
+  inverse-line: "#827b70"
+  inverse-muted: "#e1dbd1"
+  control-line: "#8a8379"
   error: "#9d2926"
-  viewer: "#142b38"
+  viewer: "#22221f"
 typography:
   display:
-    fontFamily: "Geologica, sans-serif"
-    fontSize: "clamp(29px,2.65vw,39px)"
+    fontFamily: Bodoni Moda, Georgia, serif
+    fontSize: clamp(36px,3.25vw,46px)
     fontWeight: 400
-    lineHeight: 1.2
-    letterSpacing: "-.035em"
+    lineHeight: 1.12
+    letterSpacing: "-.015em"
   page-title:
-    fontFamily: "Geologica, sans-serif"
-    fontSize: "clamp(30px,3.1vw,44px)"
+    fontFamily: Bodoni Moda, Georgia, serif
+    fontSize: clamp(34px,3.3vw,46px)
     fontWeight: 400
-    lineHeight: 1.2
-    letterSpacing: "-.035em"
+    lineHeight: 1.15
+    letterSpacing: "-.015em"
   headline:
-    fontFamily: "Geologica, sans-serif"
-    fontSize: "clamp(25px,2.4vw,34px)"
+    fontFamily: Bodoni Moda, Georgia, serif
+    fontSize: clamp(29px,2.6vw,37px)
     fontWeight: 400
-    lineHeight: 1.2
-    letterSpacing: "-.035em"
+    lineHeight: 1.15
+    letterSpacing: "-.015em"
   title:
-    fontFamily: "Geologica, sans-serif"
-    fontSize: "21px"
+    fontFamily: Bodoni Moda, Georgia, serif
+    fontSize: 25px
     fontWeight: 400
-    lineHeight: 1.2
-    letterSpacing: "-.025em"
+    lineHeight: 1.15
+    letterSpacing: "-.015em"
   body:
-    fontFamily: "Geologica, sans-serif"
-    fontSize: "16px"
+    fontFamily: Geologica, sans-serif
+    fontSize: 16px
     fontWeight: 300
     lineHeight: 1.65
   article-body:
-    fontFamily: "Geologica, sans-serif"
-    fontSize: "16px"
+    fontFamily: Geologica, sans-serif
+    fontSize: 16px
     fontWeight: 300
     lineHeight: 1.85
   label:
-    fontFamily: "Geologica, sans-serif"
-    fontSize: "14px"
+    fontFamily: Geologica, sans-serif
+    fontSize: 14px
     fontWeight: 400
     lineHeight: 1.4
   brand:
-    fontFamily: "Geologica, sans-serif"
-    fontSize: "26px"
-    fontWeight: 500
+    fontFamily: Bodoni Moda, Georgia, serif
+    fontSize: 33px
+    fontWeight: 400
     lineHeight: 1.1
-    letterSpacing: "-.04em"
+    letterSpacing: "-.025em"
 rounded:
-  square: "0"
-  indicator: "50%"
+  square: '0'
+  indicator: 50%
 spacing:
-  gutter: "clamp(20px,3.6vw,64px)"
-  space: "clamp(64px,7vw,112px)"
+  gutter: clamp(20px,3.6vw,64px)
+  space: clamp(64px,7vw,112px)
 components:
   button-primary:
-    backgroundColor: "{colors.blue}"
+    backgroundColor: "{colors.charcoal}"
     textColor: "{colors.paper}"
     typography: "{typography.label}"
-    padding: "12px 23px"
+    padding: 12px 23px
   button-primary-hover:
-    backgroundColor: "{colors.blue-hover}"
+    backgroundColor: "{colors.charcoal-hover}"
   button-light:
     backgroundColor: "{colors.paper}"
-    textColor: "{colors.blue}"
+    textColor: "{colors.charcoal}"
     typography: "{typography.label}"
-    padding: "12px 23px"
+    padding: 12px 23px
   button-light-hover:
     backgroundColor: "{colors.ground}"
   button-outline:
-    backgroundColor: "transparent"
-    textColor: "{colors.blue}"
+    backgroundColor: transparent
+    textColor: "{colors.charcoal}"
     typography: "{typography.label}"
-    padding: "12px 23px"
+    padding: 12px 23px
   button-outline-hover:
-    backgroundColor: "{colors.blue}"
+    backgroundColor: "{colors.charcoal}"
     textColor: "{colors.paper}"
   input:
-    backgroundColor: "transparent"
+    backgroundColor: transparent
     textColor: "{colors.ink}"
     rounded: "{rounded.square}"
-    padding: "11px"
-    width: "100%"
+    padding: 11px
+    width: 100%
   navigation-link:
-    backgroundColor: "transparent"
+    backgroundColor: transparent
     textColor: "{colors.ink}"
   collection-option:
-    padding: "12px"
+    padding: 12px
   collection-option-selected:
     backgroundColor: "{colors.ground}"
   pricing-band:
-    padding: "42px 30px"
+    padding: 42px 30px
   pricing-band-featured:
-    backgroundColor: "{colors.blue}"
+    backgroundColor: "{colors.charcoal}"
     textColor: "{colors.paper}"
   enquiry-panel:
     backgroundColor: "{colors.paper}"
-    padding: "32px"
+    padding: 32px
 ---
 
 # Design System: Maeve Arden Photography
@@ -117,60 +119,46 @@ components:
 
 **Creative North Star: "Folded atlas"**
 
-A cool, open folio gives photographs the largest and most varied surfaces. A single modern sans serif keeps the interface compact, while uneven image groupings, practical margins and quiet rules create an authored rhythm. The full-name wordmark feels professional without competing with the work.
-
-This system uses flat fields of lake blue, cool paper and deep ink blue. It supports browsing, reading and an enquiry preview through modest headings, visible links and restrained controls. Photography supplies the warmth and texture; the interface stays clear and spare.
+An open photographic folio in warm cream and dark charcoal. The user explicitly restored this palette and asked to regain an elegant, premium feel. Bodoni Moda provides the full-name wordmark and editorial headings; compact Geologica keeps reading, navigation and forms clear. Unequal photographs, precise captions and practical margins remain the defining layout.
 
 **Key Characteristics:**
 
-- Cool tonal surfaces with deep blue actions.
-- One locally served type family in normal case.
-- Unequal image groupings with deliberate subject preservation.
-- Flat, square controls and thin dividing rules.
-- User-directed changes with brief, optional motion.
+- Warm cream and ivory surfaces with dark grey actions and sections.
+- Refined upright serif display type paired with a restrained sans serif UI.
+- Unequal image groupings and subject-aware crops.
+- Flat square controls, thin warm-grey rules and visible underlined links.
+- User-directed scene changes with brief, optional motion.
 
 ## Colors
 
-The palette is cool and low in saturation, with deep blue providing both action emphasis and full-width tonal contrast. The frontmatter is the value authority; names below describe its application.
+The frontmatter is the value authority. Cream (`ground`) is the page and header; ivory (`paper`) supports the enquiry and closing invitation. Charcoal (`charcoal`) owns primary actions, active states, the experience section and the featured collection. Its hover role is darker. Dark ink (`ink`) is the reading foreground; warm grey (`muted`) supports captions and metadata.
 
-### Primary
+Use the light `line` for decorative separators. Form fields and collection choices use the darker `control-line`, preserving a 3:1 boundary against paper. Dark sections use `inverse-line` and `inverse-muted`; errors retain `error`. The photo viewer uses `viewer`. No blue or sage belongs to this approved palette.
 
-- **Ink blue** (`blue`): primary actions, selected filters, checked controls, selection color and the experience section. The featured collection also uses this field with paper text.
-- **Deep action blue** (`blue-hover`): primary button hover treatment.
+Body text on cream is 12.28:1, muted text on cream 5.54:1, paper on charcoal 12.22:1, inverse secondary text on charcoal 9.18:1, and form borders on paper 3.63:1.
 
-### Neutral
-
-- **Lake blue** (`ground`): the default page, sticky header, selected collection option and enquiry summary.
-- **Cool paper** (`paper`): enquiry panel, closing invitation and inverse foregrounds; also the light button on a blue section.
-- **Dark ink** (`ink`): default reading text and headings.
-- **Slate** (`muted`): supporting copy, image captions, breadcrumbs and form metadata.
-- **Cool rule** (`line`): borders and separators on light surfaces.
-- **Blue rule** (`light-line`): separators within the dark experience section.
-- **Pale blue text** (`inverse-muted`): secondary text on that blue field.
-- **Validation red** (`error`): invalid field borders, field messages and the error summary. It is a functional state rather than a decorative accent.
-- **Viewer ink** (`viewer`): the full-screen photo viewer, keeping uncropped photography distinct from the page.
-
-**The Tonal Field Rule.** Use the established blue and paper fields to separate major content; recurring cards and content bands stay flat.
+**The Tonal Field Rule.** Separate major content with cream, ivory and charcoal fields. Keep recurring content and pricing bands flat.
 
 ## Typography
 
-**Display Font:** Geologica, with sans-serif fallback.
+**Display Font:** Bodoni Moda, Georgia, serif.
 
-**Body Font:** Geologica, with sans-serif fallback.
+**Body Font:** Geologica, sans-serif.
 
-**Character:** A single variable sans serif supplies calm, contemporary type. The local normal-style WOFF2 supports weights (100–900); the interface uses light body copy and moderate heading and selection weights. Emphasis remains upright.
+Bodoni Moda is a local 14,556-byte Latin WOFF2, normal Roman 400, using the source's 11pt optical cut. It is static: do not request other weights or synthesize italic. Geologica remains a local 24,964-byte Latin variable WOFF2 with weights 100–900. Both use `font-display: swap`, are preloaded, and retain their SIL OFL licenses under assets/fonts.
 
 ### Hierarchy
 
-- **Display:** the compact home heading uses the `display` role with a short measure (21ch). It becomes (30px / 1.17) at widths up to (600px), and (40px) from (1600px).
-- **Page title:** the `page-title` role introduces inner pages with a measure of roughly (24ch), or (25ch) for article headings. It becomes (31px) on small screens.
-- **Headline:** the `headline` role anchors sections. Article subheads use (26px), reducing to (24px) on small screens; component headings vary by their local content density.
-- **Title:** the `title` role is the base for smaller headings. Photo captions use smaller titles (16px), collection names use (25px), and journal titles use (22–23px).
-- **Body:** light weight, comfortable leading and a default maximum measure (70ch). Supporting sections use (14–15px). Article paragraphs use the more generous `article-body` leading and become (15px) on small screens.
-- **Label:** primary button and text-link labels use (14px). Navigation uses (13px); captions and supporting metadata use (11–13px). These are ordinary labels, not headings above headings.
-- **Brand:** the full-name wordmark uses the `brand` role. It reduces to (24px) below (900px); its descriptive second line remains (11px), weight (350), with tracking (.04em).
+- **Home display:** 36–46px fluid desktop scale, line-height 1.12; 32px on mobile. Keep the explicit two-part sentence compact above the photographs.
+- **Page titles:** 34–46px desktop scale, 32px on mobile; line-height 1.15.
+- **Section headlines:** 29–37px base scale; supporting local headings use 28–30px.
+- **Content titles:** serif journal titles use 26–28px and collection names 31px (29px mobile).
+- **Wordmark:** Bodoni Moda 400, 33px desktop and 31px at widths up to 900px, line-height 1.1, tracking -.025em. Its descriptive second line stays Geologica 11px.
+- **Body:** Geologica 300, 16px / 1.65, with supporting passages at 14–15px. Article text uses 16px / 1.85, 15px on mobile, bounded to 70ch.
+- **UI:** Geologica for navigation, labels, buttons, forms and metadata. Small functional headings in the gallery, image viewer, menu, enquiry panel and experience steps remain sans serif. The enquiry panel headings are 25px, 23px mobile.
+- **Tracking:** serif headings use -.015em; small UI roles retain their local tracking. Display emphasis stays upright.
 
-**The One Family Rule.** Build hierarchy with Geologica's size, weight and spacing; keep display emphasis upright and normal case.
+**The Two Role Rule.** Use the serif for editorial voice and the sans serif for reading and operation. Keep headings restrained so photography leads.
 
 ## Layout
 
@@ -201,7 +189,7 @@ The system is flat at rest. Tonal fields, scale and borders establish hierarchy.
 
 Interface panels, buttons, rules and image frames use square geometry. Text fields explicitly use the `square` corner token. Place-selection indicators use the circular `indicator` token; they are functional selected-state marks. Thin strokes (1px) define controls and dividers; selected gallery filters and invalid inputs use stronger strokes (2px).
 
-The header and footer use the full-name wordmark. The separate favicon draws an unmistakable MA in a small cool-blue asset; its rounded asset boundary is not a card or button radius. UI icons are small inline SVG strokes.
+The header and footer use the full-name wordmark. The separate favicon draws an unmistakable MA in a small warm-blue asset; its rounded asset boundary is not a card or button radius. UI icons are small inline SVG strokes.
 
 ## Components
 
@@ -210,7 +198,7 @@ The header and footer use the full-name wordmark. The separate favicon draws an 
 Compact, direct actions use a solid tonal rectangle.
 
 - **Primary:** ink-blue fill and paper text, minimum height (48px), with `button-primary` padding. Hover uses `button-primary-hover` over a short background transition (180ms).
-- **Light:** paper fill on a blue field; hover changes to lake blue. The closing invitation deliberately presents the normal primary color assignment even though its markup shares the light-button modifier.
+- **Light:** paper fill on a charcoal field; hover changes to lake blue. The closing invitation deliberately presents the normal primary color assignment even though its markup shares the light-button modifier.
 - **Outline:** transparent fill, blue text and a blue border; hover fills blue and reverses the text.
 - **Small:** header actions use a minimum height (44px) and padding (10px 20px).
 - **Text:** underlined labels, a minimum height (44px), and an underline offset (5px). The next-story link includes the words “Next story” in the link and underlines its heading with an offset (7px).
@@ -236,13 +224,13 @@ Tiles preserve natural image ratios and expose a small paper-backed expand contr
 
 ### Pricing bands
 
-Collections are contiguous flat rows separated by rules. Desktop composition puts description, price and included coverage in separate columns. The featured collection uses the blue field; its light button provides contrast. At small widths the price stays beside the name, followed by the description, included coverage and action. Tabular numerals keep price information orderly. Preserve these bands rather than inheriting an unrelated equal-card layout.
+Collections are contiguous flat rows separated by rules. Desktop composition puts description, price and included coverage in separate columns. The featured collection uses the charcoal field; its light button provides contrast. At small widths the price stays beside the name, followed by the description, included coverage and action. Tabular numerals keep price information orderly. Preserve these bands rather than inheriting an unrelated equal-card layout.
 
 ### Inputs and enquiry preview
 
-Fields are transparent, square and outlined with the cool rule, with a minimum height (48px). Labels remain visible above them. Mobile text entry uses (16px) type; placeholders use Slate at full opacity. Focus uses the shared outline. Invalid inputs receive a stronger red border and a nearby error; a linked error summary focuses the first failing field. The flexible-date choice disables and dims the date field (.55 opacity) and changes its required-state wording.
+Fields are transparent, square and outlined with the control rule, with a minimum height (48px). Labels remain visible above them. Mobile text entry uses (16px) type; placeholders use warm grey at full opacity. Focus uses the shared outline. Invalid inputs receive a stronger red border and a nearby error; a linked error summary focuses the first failing field. The flexible-date choice disables and dims the date field (.55 opacity) and changes its required-state wording.
 
-The paper enquiry panel carries the demo notice, two-step progress and form. Selected collection options use a blue border and lake-blue fill; their minimum height is (78px). The form preserves the selected collection from collection links. Step changes move focus to the new heading. Valid details produce an editable, browser-only preview, with a copy action and visible success or failure status. Keep clear that the preview sends, saves and reserves nothing.
+The paper enquiry panel carries the demo notice, two-step progress and form. Selected collection options use a charcoal border and cream fill; their minimum height is (78px). The form preserves the selected collection from collection links. Step changes move focus to the new heading. Valid details produce an editable, browser-only preview, with a copy action and visible success or failure status. Keep clear that the preview sends, saves and reserves nothing.
 
 ### Journal, details and utility content
 
@@ -252,7 +240,7 @@ Journal items use unboxed photographs and titles; home article metadata follows 
 
 ### Do:
 
-- Do use the cool tonal fields, compact Geologica hierarchy and visible underlined links.
+- Do use the cream and charcoal fields, refined Bodoni Moda headings, compact Geologica UI and visible underlined links.
 - Do preserve the subject when a photograph is cropped, and retain native ratios in the gallery and contained images in the viewer.
 - Do make scene changes user-triggered and honor reduced-motion preferences.
 - Do keep selected, focus, invalid, disabled and loading states distinguishable through more than copy alone.
@@ -261,7 +249,7 @@ Journal items use unboxed photographs and titles; home article metadata follows 
 
 ### Don't:
 
-- Don't introduce oversized or italic display typography, a second display family, or a boxed monogram in the header.
+- Don't introduce oversized or italic display typography, another display family, or a boxed monogram in the header.
 - Don't turn the native gallery photographs into equal-height crops or the collection bands into generic floating cards.
 - Don't remove visible focus, image credits, current navigation states or the enquiry preview's operating limits.
 - Don't promote hidden legacy eyebrow markup, decorative numbering or text-arrow characters into new component conventions.
