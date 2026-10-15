@@ -14,7 +14,7 @@
       entries.forEach(entry => visibleCallsToAction.set(entry.target, entry.isIntersecting));
       stickyEnquiry.hidden = [...visibleCallsToAction.values()].some(Boolean);
     });
-    const targets = [$('.folio-practical .text-link'), $('.closing-cta'), $('.site-footer')].filter(Boolean);
+    const targets = [$('.folio'), $('.home-photographs'), $('.closing-cta'), $('.site-footer')].filter(Boolean);
     if ($('.folio-practical .text-link')) stickyEnquiry.hidden = true;
     targets.forEach(target => observer.observe(target));
   }
@@ -87,6 +87,7 @@
     const count = $('[data-lightbox-count]', galleryDialog);
     const title = $('#lightbox-title', galleryDialog);
     const credit = $('[data-lightbox-credit]', galleryDialog);
+    const creditLabel = $('[data-lightbox-credit-label]', galleryDialog);
     const previous = $('[data-lightbox-prev]', galleryDialog);
     const next = $('[data-lightbox-next]', galleryDialog);
     let current = 0;
@@ -109,11 +110,11 @@
       count.textContent = `${current + 1} / ${visible.length}`;
       previous.disabled = next.disabled = visible.length < 2;
       credit.href = `${prefix}credits.html`;
-      credit.textContent = 'View photographer credits ↗';
+      creditLabel.textContent = 'View photographer credits';
       manifest().then(data => {
         // Ignore a late response if the user has moved to another photograph.
         if (visible[current].dataset.lightbox !== key || !data?.[key]) return;
-        credit.textContent = `Photograph by ${data[key].photographer} ↗`;
+        creditLabel.textContent = `Photograph by ${data[key].photographer}`;
         credit.href = data[key].sourceUrl;
       });
     };
@@ -140,72 +141,151 @@
         move(e.key === 'ArrowLeft' ? -1 : 1);
       }
     });
+    let touchStart;
+    const viewer = $('.lightbox-image', galleryDialog);
+    viewer.addEventListener('touchstart', event => {
+      touchStart = event.touches.length === 1 ? {x:event.touches[0].clientX, y:event.touches[0].clientY} : null;
+    }, {passive:true});
+    viewer.addEventListener('touchend', event => {
+      if (!touchStart || !event.changedTouches.length) return;
+      const dx = event.changedTouches[0].clientX - touchStart.x;
+      const dy = event.changedTouches[0].clientY - touchStart.y;
+      touchStart = null;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) move(dx < 0 ? 1 : -1);
+    }, {passive:true});
+    viewer.addEventListener('touchcancel', () => { touchStart = null; }, {passive:true});
     galleryDialog.addEventListener('close', () => {
       document.body.classList.remove('dialog-open');
       trigger?.focus();
     });
   }
 
-  // A small, user-directed folio. Default photography remains usable without JS.
+  // The native photo rail also works with touch, trackpads and no JavaScript.
+  const rail = $('.photo-rail');
+  if (rail) {
+    const previous = $('[data-rail-prev]');
+    const next = $('[data-rail-next]');
+    $('[data-rail-controls]').hidden = false;
+    // Horizontal overflow can defer native lazy images past their first reveal.
+    // Warm this small set only when the gallery approaches the viewport.
+    if ('IntersectionObserver' in window) {
+      const warm = new IntersectionObserver(entries => {
+        if (!entries.some(entry => entry.isIntersecting)) return;
+        $$('img', rail).forEach(img => { img.loading = 'eager'; });
+        warm.disconnect();
+      }, {rootMargin:'400px'});
+      warm.observe(rail);
+    }
+    const update = () => {
+      previous.disabled = rail.scrollLeft < 8;
+      next.disabled = rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 8;
+    };
+    const moveRail = direction => {
+      const step = $('.photo-print', rail).getBoundingClientRect().width + parseFloat(getComputedStyle(rail).columnGap);
+      rail.scrollBy({left:direction * step, behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+    };
+    previous.addEventListener('click', () => moveRail(-1));
+    next.addEventListener('click', () => moveRail(1));
+    rail.addEventListener('scroll', update, {passive:true});
+    window.addEventListener('resize', update, {passive:true});
+    update();
+  }
+
+  // Explicit preview buttons and arrows share one, race-safe selection.
   const folio = $('[data-folio]');
   if (folio) {
-    const scenes = {
-      lake: {main:'still-water', secondary:'hero', title:'Still Water', place:'Lake District', href:'stories/still-water.html'},
-      city: {main:'city-softened', secondary:'bridal', title:'City, Softened', place:'London', href:'stories/city-softened.html'},
-      celebration: {main:'celebration', secondary:'table', title:'After the Quiet', place:'Celebrations', href:'stories/after-the-quiet.html'}
+    const scenes = [
+      {id:'feeling', main:'embrace', secondary:'hero', title:'All the feeling', detail:'Candid moments', href:'stories/after-the-quiet.html'},
+      {id:'setting', main:'meadow', secondary:'hands', title:'Room to breathe', detail:'People & place', href:'stories/still-water.html'},
+      {id:'portraits', main:'editorial', secondary:'bridal', title:'Just the two of you', detail:'Quiet portraits', href:'stories/city-softened.html'}
+    ];
+    const descriptions = {
+      embrace:'Newlyweds laughing as guests shower them with confetti in black and white',
+      hero:'Bride and groom laughing together in a black and white wedding portrait',
+      meadow:'Newlyweds holding hands in a sunlit mountain meadow',
+      hands:'A seated wedding couple holding hands beside a bouquet',
+      editorial:'A bride and groom holding hands on a sunlit city bridge',
+      bridal:'A bride looking towards the camera in soft black and white light'
     };
-    const controls = $$('[data-place]', folio);
+    const controls = $$('[data-scene]', folio);
     const primary = $('[data-folio-primary]', folio);
     const secondary = $('[data-folio-secondary]', folio);
     const caption = $('[data-folio-caption]', folio);
     const story = $('[data-folio-story]', folio);
+    const status = $('[data-folio-status]', folio);
     let request = 0;
-    $('[data-folio-controls]', folio).hidden = false;
+    let active = 0;
+    let requested = 0;
+    $$('[data-folio-controls]', folio).forEach(el => { el.hidden = false; });
     const prepare = async (key, target) => {
       const template = $('picture', target).cloneNode(true);
+      template.dataset.photo = key;
       const img = $('img', template);
-      const sizes = img.sizes;
       const srcset = format => [480,800,1200,1600].map(w => `${prefix}assets/images/${key}-${w}.${format} ${w}w`).join(', ');
       $('source', template).srcset = srcset('avif');
       img.srcset = srcset('webp');
       img.src = `${prefix}assets/images/${key}-800.webp`;
       img.loading = 'eager';
-      // Decode the responsive picture offscreen in memory, without an extra request.
+      img.removeAttribute('fetchpriority');
       const probe = new Image();
-      probe.sizes = sizes;
+      probe.sizes = img.sizes;
       probe.srcset = srcset('avif');
       probe.src = `${prefix}assets/images/${key}-800.avif`;
-      try { await probe.decode(); } catch { /* The WebP fallback remains available. */ }
-      const descriptions = {'still-water':'Newlyweds standing together at the end of a wooden jetty',hero:'Bride and groom sharing a laugh on their wedding day','city-softened':'Bridal portrait beneath the arches of Tower Bridge in London',bridal:'Bridal portrait in soft black and white light',celebration:'Bride and groom surrounded by a shower of confetti',table:'Wedding reception table with flowers and candlelight'};
+      try { await probe.decode(); }
+      catch {
+        probe.srcset = srcset('webp');
+        probe.src = img.src;
+        await probe.decode();
+      }
       img.alt = descriptions[key];
-      img.width = probe.naturalWidth || 800;
-      img.height = probe.naturalHeight || 1000;
+      img.width = probe.naturalWidth;
+      img.height = probe.naturalHeight;
       return template;
     };
-    controls.forEach(button => button.addEventListener('click', async () => {
-      if (button.getAttribute('aria-pressed') === 'true') return;
+    const selectScene = async index => {
       const current = ++request;
-      const scene = scenes[button.dataset.place];
+      requested = (index + scenes.length) % scenes.length;
+      if (requested === active) {
+        delete folio.dataset.loading;
+        folio.removeAttribute('aria-busy');
+        status.textContent = '';
+        return;
+      }
+      const scene = scenes[requested];
       folio.dataset.loading = 'true';
       folio.setAttribute('aria-busy', 'true');
-      const pictures = await Promise.all([prepare(scene.main, primary), prepare(scene.secondary, secondary)]);
-      if (current !== request) return;
-      primary.replaceChildren(pictures[0]);
-      secondary.replaceChildren(pictures[1]);
-      primary.dataset.photo = scene.main;
-      primary.href = story.href = scene.href;
-      primary.setAttribute('aria-label', `Explore ${scene.title}`);
-      secondary.href = `portfolio.html#${scene.secondary}`;
-      const title = document.createElement('strong');
-      title.textContent = scene.title;
-      caption.replaceChildren(title, document.createTextNode(`${scene.place} · A visual study`));
-      controls.forEach(control => control.setAttribute('aria-pressed', String(control === button)));
-      delete folio.dataset.loading;
-      folio.removeAttribute('aria-busy');
-      folio.classList.remove('is-changing');
-      // Reset this one authored transition only when a visitor changes the scene.
-      requestAnimationFrame(() => folio.classList.add('is-changing'));
-    }));
+      status.textContent = 'Loading photographs…';
+      try {
+        const pictures = await Promise.all([prepare(scene.main, primary), prepare(scene.secondary, secondary)]);
+        if (current !== request) return;
+        active = scenes.indexOf(scene);
+        primary.replaceChildren(pictures[0]);
+        secondary.replaceChildren(pictures[1]);
+        primary.dataset.photo = scene.main;
+        primary.href = story.href = scene.href;
+        primary.setAttribute('aria-label', `Explore ${scene.title}`);
+        secondary.href = `portfolio.html#${scene.secondary}`;
+        secondary.setAttribute('aria-label', `View photograph: ${descriptions[scene.secondary]}`);
+        const title = document.createElement('strong');
+        title.textContent = scene.title;
+        caption.replaceChildren(title, document.createTextNode(`${scene.detail} · A visual study`));
+        controls.forEach(control => control.setAttribute('aria-pressed', String(control.dataset.scene === scene.id)));
+        $('[data-scene-count]', folio).textContent = `${active + 1} / ${scenes.length}`;
+        status.textContent = `Showing ${scene.title}`;
+        folio.classList.remove('is-changing');
+        requestAnimationFrame(() => folio.classList.add('is-changing'));
+      } catch {
+        if (current === request) status.textContent = 'Photographs could not load. Please try again.';
+      } finally {
+        if (current === request) {
+          delete folio.dataset.loading;
+          folio.removeAttribute('aria-busy');
+        }
+      }
+    };
+    controls.forEach(button => button.addEventListener('click', () => selectScene(scenes.findIndex(scene => scene.id === button.dataset.scene))));
+    $('[data-scene-prev]', folio).addEventListener('click', () => selectScene(requested - 1));
+    $('[data-scene-next]', folio).addEventListener('click', () => selectScene(requested + 1));
   }
 
   const form = $('[data-enquiry-form]');

@@ -663,6 +663,753 @@
       }
     ]
   },
+  "meadow": {
+    "photographer": "Foto Pettine",
+    "photoId": "IfjHaIoAoqE",
+    "cdnId": "photo-1532712938310-34cb3982ef74",
+    "sourceUrl": "https://unsplash.com/photos/a-bride-and-groom-walking-on-a-hill-IfjHaIoAoqE",
+    "alt": "Newlyweds holding hands in a sunlit mountain meadow",
+    "originalWidth": null,
+    "originalHeight": null,
+    "width": 2400,
+    "height": 1600,
+    "sourceWidth": 2400,
+    "sourceHeight": 1600,
+    "sourceBytes": 254436,
+    "sourceSha256": "0109e0402cdf2d2294ed6ff21a5957524e24ba46f0ab1ce88a853f5ce1a74e43",
+    "downloadUrl": "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "meadow-480.webp",
+        "width": 480,
+        "height": 320,
+        "format": "webp",
+        "bytes": 5510
+      },
+      {
+        "file": "meadow-480.avif",
+        "width": 480,
+        "height": 320,
+        "format": "avif",
+        "bytes": 5448
+      },
+      {
+        "file": "meadow-800.webp",
+        "width": 800,
+        "height": 533,
+        "format": "webp",
+        "bytes": 13416
+      },
+      {
+        "file": "meadow-800.avif",
+        "width": 800,
+        "height": 533,
+        "format": "avif",
+        "bytes": 11077
+      },
+      {
+        "file": "meadow-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "format": "webp",
+        "bytes": 26044
+      },
+      {
+        "file": "meadow-1200.avif",
+        "width": 1200,
+        "height": 800,
+        "format": "avif",
+        "bytes": 20703
+      },
+      {
+        "file": "meadow-1600.webp",
+        "width": 1600,
+        "height": 1067,
+        "format": "webp",
+        "bytes": 42522
+      },
+      {
+        "file": "meadow-1600.avif",
+        "width": 1600,
+        "height": 1067,
+        "format": "avif",
+        "bytes": 33557
+      }
+    ]
+  },
+  "embrace": {
+    "photographer": "Jonathan Borba",
+    "photoId": "eg-72fI9wK4",
+    "cdnId": "photo-1573676048035-9c2a72b6a12a",
+    "sourceUrl": "https://unsplash.com/photos/greyscale-photography-of-newly-wed-eg-72fI9wK4",
+    "alt": "Newlyweds laughing as guests shower them with confetti in black and white",
+    "originalWidth": null,
+    "originalHeight": null,
+    "width": 2400,
+    "height": 1600,
+    "sourceWidth": 2400,
+    "sourceHeight": 1600,
+    "sourceBytes": 781052,
+    "sourceSha256": "d805d5dcef04f6d22d629c7091b69c00698bc7449dedd65527e3692389e9407d",
+    "downloadUrl": "https://images.unsplash.com/photo-1573676048035-9c2a72b6a12a?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "embrace-480.webp",
+        "width": 480,
+        "height": 320,
+        "format": "webp",
+        "bytes": 20824
+      },
+      {
+        "file": "embrace-480.avif",
+        "width": 480,
+        "height": 320,
+        "format": "avif",
+        "bytes": 17222
+      },
+      {
+        "file": "embrace-800.webp",
+        "width": 800,
+        "height": 533,
+        "format": "webp",
+        "bytes": 43120
+      },
+      {
+        "file": "embrace-800.avif",
+        "width": 800,
+        "height": 533,
+        "format": "avif",
+        "bytes": 32975
+      },
+      {
+        "file": "embrace-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "format": "webp",
+        "bytes": 75294
+      },
+      {
+        "file": "embrace-1200.avif",
+        "width": 1200,
+        "height": 800,
+        "format": "avif",
+        "bytes": 56900
+      },
+      {
+        "file": "embrace-1600.webp",
+        "width": 1600,
+        "height": 1067,
+        "format": "webp",
+        "bytes": 115470
+      },
+      {
+        "file": "embrace-1600.avif",
+        "width": 1600,
+        "height": 1067,
+        "format": "avif",
+        "bytes": 87397
+      }
+    ]
+  },
+  "hands": {
+    "photographer": "Nathan Dumlao",
+    "photoId": "duNBz_LBaEc",
+    "cdnId": "photo-1511288702291-e55d6cfbe3b5",
+    "sourceUrl": "https://unsplash.com/photos/bride-and-groom-sitting-and-holding-their-hands-duNBz_LBaEc",
+    "alt": "A seated wedding couple holding hands beside a bouquet",
+    "originalWidth": null,
+    "originalHeight": null,
+    "width": 2400,
+    "height": 1601,
+    "sourceWidth": 2400,
+    "sourceHeight": 1601,
+    "sourceBytes": 637093,
+    "sourceSha256": "a6950e5d524b01e994a12d223b3f1b9fa8997a2f86f885331f1e39365b16bb5f",
+    "downloadUrl": "https://images.unsplash.com/photo-1511288702291-e55d6cfbe3b5?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "hands-480.webp",
+        "width": 480,
+        "height": 320,
+        "format": "webp",
+        "bytes": 16138
+      },
+      {
+        "file": "hands-480.avif",
+        "width": 480,
+        "height": 320,
+        "format": "avif",
+        "bytes": 14906
+      },
+      {
+        "file": "hands-800.webp",
+        "width": 800,
+        "height": 534,
+        "format": "webp",
+        "bytes": 34598
+      },
+      {
+        "file": "hands-800.avif",
+        "width": 800,
+        "height": 534,
+        "format": "avif",
+        "bytes": 28357
+      },
+      {
+        "file": "hands-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "format": "webp",
+        "bytes": 61374
+      },
+      {
+        "file": "hands-1200.avif",
+        "width": 1200,
+        "height": 800,
+        "format": "avif",
+        "bytes": 48372
+      },
+      {
+        "file": "hands-1600.webp",
+        "width": 1600,
+        "height": 1067,
+        "format": "webp",
+        "bytes": 92386
+      },
+      {
+        "file": "hands-1600.avif",
+        "width": 1600,
+        "height": 1067,
+        "format": "avif",
+        "bytes": 73311
+      }
+    ]
+  },
+  "vows": {
+    "photographer": "Jonathan Borba",
+    "photoId": "K0XhOJPyXBY",
+    "cdnId": "photo-1705088014788-e35d313fa93a",
+    "sourceUrl": "https://unsplash.com/photos/a-bride-and-groom-standing-under-a-canopy-K0XhOJPyXBY",
+    "alt": "A bride and groom embracing beneath hanging woven lamps",
+    "originalWidth": null,
+    "originalHeight": null,
+    "width": 2400,
+    "height": 3598,
+    "sourceWidth": 2400,
+    "sourceHeight": 3598,
+    "sourceBytes": 1747046,
+    "sourceSha256": "cda28b0356a2db0b28e12ca2502beb6e31370a5de5864fc4c90604b3b1d62f70",
+    "downloadUrl": "https://images.unsplash.com/photo-1705088014788-e35d313fa93a?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "vows-480.webp",
+        "width": 480,
+        "height": 720,
+        "format": "webp",
+        "bytes": 43454
+      },
+      {
+        "file": "vows-480.avif",
+        "width": 480,
+        "height": 720,
+        "format": "avif",
+        "bytes": 31182
+      },
+      {
+        "file": "vows-800.webp",
+        "width": 800,
+        "height": 1199,
+        "format": "webp",
+        "bytes": 104582
+      },
+      {
+        "file": "vows-800.avif",
+        "width": 800,
+        "height": 1199,
+        "format": "avif",
+        "bytes": 70500
+      },
+      {
+        "file": "vows-1200.webp",
+        "width": 1200,
+        "height": 1799,
+        "format": "webp",
+        "bytes": 202172
+      },
+      {
+        "file": "vows-1200.avif",
+        "width": 1200,
+        "height": 1799,
+        "format": "avif",
+        "bytes": 136808
+      },
+      {
+        "file": "vows-1600.webp",
+        "width": 1600,
+        "height": 2399,
+        "format": "webp",
+        "bytes": 312190
+      },
+      {
+        "file": "vows-1600.avif",
+        "width": 1600,
+        "height": 2399,
+        "format": "avif",
+        "bytes": 218571
+      }
+    ]
+  },
+  "sparklers": {
+    "photographer": "Fotógrafo Samuel Cruz",
+    "photoId": "ehrrnNrEHbY",
+    "cdnId": "photo-1768777273847-e5d8531b7fc5",
+    "sourceUrl": "https://unsplash.com/photos/wedding-couple-dancing-surrounded-by-guests-holding-sparklers-ehrrnNrEHbY",
+    "alt": "A wedding couple dancing surrounded by guests holding sparklers",
+    "originalWidth": null,
+    "originalHeight": null,
+    "width": 2400,
+    "height": 1602,
+    "sourceWidth": 2400,
+    "sourceHeight": 1602,
+    "sourceBytes": 827256,
+    "sourceSha256": "d99a73f50fddc3c60d2c40cc98d1bb6e8f1e668a87e8414fa32c0b42b9fe6c01",
+    "downloadUrl": "https://images.unsplash.com/photo-1768777273847-e5d8531b7fc5?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "sparklers-480.webp",
+        "width": 480,
+        "height": 320,
+        "format": "webp",
+        "bytes": 23962
+      },
+      {
+        "file": "sparklers-480.avif",
+        "width": 480,
+        "height": 320,
+        "format": "avif",
+        "bytes": 17771
+      },
+      {
+        "file": "sparklers-800.webp",
+        "width": 800,
+        "height": 534,
+        "format": "webp",
+        "bytes": 50466
+      },
+      {
+        "file": "sparklers-800.avif",
+        "width": 800,
+        "height": 534,
+        "format": "avif",
+        "bytes": 34359
+      },
+      {
+        "file": "sparklers-1200.webp",
+        "width": 1200,
+        "height": 801,
+        "format": "webp",
+        "bytes": 85802
+      },
+      {
+        "file": "sparklers-1200.avif",
+        "width": 1200,
+        "height": 801,
+        "format": "avif",
+        "bytes": 60752
+      },
+      {
+        "file": "sparklers-1600.webp",
+        "width": 1600,
+        "height": 1068,
+        "format": "webp",
+        "bytes": 124938
+      },
+      {
+        "file": "sparklers-1600.avif",
+        "width": 1600,
+        "height": 1068,
+        "format": "avif",
+        "bytes": 92764
+      }
+    ]
+  },
+  "editorial": {
+    "photographer": "Nathan Dumlao",
+    "photoId": "2UZ4kQRImVg",
+    "cdnId": "photo-1628710911780-dff22a382bdd",
+    "sourceUrl": "https://unsplash.com/photos/man-in-black-suit-standing-beside-woman-in-white-wedding-dress-2UZ4kQRImVg",
+    "alt": "A bride and groom holding hands on a sunlit city bridge",
+    "originalWidth": null,
+    "originalHeight": null,
+    "width": 2400,
+    "height": 3598,
+    "sourceWidth": 2400,
+    "sourceHeight": 3598,
+    "sourceBytes": 1155780,
+    "sourceSha256": "e85a6cd74df2c932c54c042249e100becffce98e8f6e9f7976228fba878d1ae0",
+    "downloadUrl": "https://images.unsplash.com/photo-1628710911780-dff22a382bdd?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "editorial-480.webp",
+        "width": 480,
+        "height": 720,
+        "format": "webp",
+        "bytes": 24510
+      },
+      {
+        "file": "editorial-480.avif",
+        "width": 480,
+        "height": 720,
+        "format": "avif",
+        "bytes": 21994
+      },
+      {
+        "file": "editorial-800.webp",
+        "width": 800,
+        "height": 1199,
+        "format": "webp",
+        "bytes": 56672
+      },
+      {
+        "file": "editorial-800.avif",
+        "width": 800,
+        "height": 1199,
+        "format": "avif",
+        "bytes": 48033
+      },
+      {
+        "file": "editorial-1200.webp",
+        "width": 1200,
+        "height": 1799,
+        "format": "webp",
+        "bytes": 111866
+      },
+      {
+        "file": "editorial-1200.avif",
+        "width": 1200,
+        "height": 1799,
+        "format": "avif",
+        "bytes": 92960
+      },
+      {
+        "file": "editorial-1600.webp",
+        "width": 1600,
+        "height": 2399,
+        "format": "webp",
+        "bytes": 182782
+      },
+      {
+        "file": "editorial-1600.avif",
+        "width": 1600,
+        "height": 2399,
+        "format": "avif",
+        "bytes": 150939
+      }
+    ]
+  },
+  "dance": {
+    "photographer": "sammy swae",
+    "photoId": "GDssDJ0C1BY",
+    "cdnId": "photo-1788156417100-7b82cc248d3c",
+    "sourceUrl": "https://unsplash.com/photos/bride-and-groom-dancing-at-wedding-GDssDJ0C1BY",
+    "alt": "Newlyweds dancing with guests beneath flowers and mirrored disco balls",
+    "originalWidth": null,
+    "originalHeight": null,
+    "width": 2400,
+    "height": 3600,
+    "sourceWidth": 2400,
+    "sourceHeight": 3600,
+    "sourceBytes": 1609572,
+    "sourceSha256": "001df3c76544c1efb1ade0e3cc4e5d0e9fa4c015e1a76e3342af75253a1ce00d",
+    "downloadUrl": "https://images.unsplash.com/photo-1788156417100-7b82cc248d3c?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "dance-480.webp",
+        "width": 480,
+        "height": 720,
+        "format": "webp",
+        "bytes": 47186
+      },
+      {
+        "file": "dance-480.avif",
+        "width": 480,
+        "height": 720,
+        "format": "avif",
+        "bytes": 33051
+      },
+      {
+        "file": "dance-800.webp",
+        "width": 800,
+        "height": 1200,
+        "format": "webp",
+        "bytes": 105618
+      },
+      {
+        "file": "dance-800.avif",
+        "width": 800,
+        "height": 1200,
+        "format": "avif",
+        "bytes": 70160
+      },
+      {
+        "file": "dance-1200.webp",
+        "width": 1200,
+        "height": 1800,
+        "format": "webp",
+        "bytes": 197658
+      },
+      {
+        "file": "dance-1200.avif",
+        "width": 1200,
+        "height": 1800,
+        "format": "avif",
+        "bytes": 131900
+      },
+      {
+        "file": "dance-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "format": "webp",
+        "bytes": 304808
+      },
+      {
+        "file": "dance-1600.avif",
+        "width": 1600,
+        "height": 2400,
+        "format": "avif",
+        "bytes": 208171
+      }
+    ]
+  },
+  "bouquet": {
+    "photographer": "Drew Coffman",
+    "photoId": "llWjwo200fo",
+    "cdnId": "photo-1465495976277-4387d4b0b4c6",
+    "sourceUrl": "https://unsplash.com/photos/man-and-woman-holding-hands-llWjwo200fo",
+    "alt": "A couple holding hands over a wedding bouquet of pale peach and white flowers",
+    "originalWidth": null,
+    "originalHeight": null,
+    "width": 2400,
+    "height": 1600,
+    "sourceWidth": 2400,
+    "sourceHeight": 1600,
+    "sourceBytes": 381325,
+    "sourceSha256": "3eb917733ee02f0547cdc1bd3740abf33810150ebfcf1136dac8990e335a0329",
+    "downloadUrl": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "bouquet-480.webp",
+        "width": 480,
+        "height": 320,
+        "format": "webp",
+        "bytes": 11592
+      },
+      {
+        "file": "bouquet-480.avif",
+        "width": 480,
+        "height": 320,
+        "format": "avif",
+        "bytes": 11935
+      },
+      {
+        "file": "bouquet-800.webp",
+        "width": 800,
+        "height": 533,
+        "format": "webp",
+        "bytes": 22338
+      },
+      {
+        "file": "bouquet-800.avif",
+        "width": 800,
+        "height": 533,
+        "format": "avif",
+        "bytes": 20319
+      },
+      {
+        "file": "bouquet-1200.webp",
+        "width": 1200,
+        "height": 800,
+        "format": "webp",
+        "bytes": 37560
+      },
+      {
+        "file": "bouquet-1200.avif",
+        "width": 1200,
+        "height": 800,
+        "format": "avif",
+        "bytes": 32821
+      },
+      {
+        "file": "bouquet-1600.webp",
+        "width": 1600,
+        "height": 1067,
+        "format": "webp",
+        "bytes": 54838
+      },
+      {
+        "file": "bouquet-1600.avif",
+        "width": 1600,
+        "height": 1067,
+        "format": "avif",
+        "bytes": 46980
+      }
+    ]
+  },
+  "flowers": {
+    "photographer": "Jeremy Wong Weddings",
+    "photoId": "RninEjO67e0",
+    "cdnId": "photo-1526030107000-de8ac0f65439",
+    "sourceUrl": "https://unsplash.com/photos/white-roses-in-vase-RninEjO67e0",
+    "alt": "White roses and greenery arranged in glass vases",
+    "originalWidth": null,
+    "originalHeight": null,
+    "width": 2400,
+    "height": 3600,
+    "sourceWidth": 2400,
+    "sourceHeight": 3600,
+    "sourceBytes": 1101851,
+    "sourceSha256": "80476270683b674fcc3e4fb234b6ee09e9c75c60185c6e907a4417b46a6fe937",
+    "downloadUrl": "https://images.unsplash.com/photo-1526030107000-de8ac0f65439?fm=jpg&q=90&w=2400&fit=max",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "licenseVerifiedOn": "2026-10-15",
+    "widths": [
+      480,
+      800,
+      1200,
+      1600
+    ],
+    "variants": [
+      {
+        "file": "flowers-480.webp",
+        "width": 480,
+        "height": 720,
+        "format": "webp",
+        "bytes": 20740
+      },
+      {
+        "file": "flowers-480.avif",
+        "width": 480,
+        "height": 720,
+        "format": "avif",
+        "bytes": 18157
+      },
+      {
+        "file": "flowers-800.webp",
+        "width": 800,
+        "height": 1200,
+        "format": "webp",
+        "bytes": 42392
+      },
+      {
+        "file": "flowers-800.avif",
+        "width": 800,
+        "height": 1200,
+        "format": "avif",
+        "bytes": 34837
+      },
+      {
+        "file": "flowers-1200.webp",
+        "width": 1200,
+        "height": 1800,
+        "format": "webp",
+        "bytes": 77782
+      },
+      {
+        "file": "flowers-1200.avif",
+        "width": 1200,
+        "height": 1800,
+        "format": "avif",
+        "bytes": 61229
+      },
+      {
+        "file": "flowers-1600.webp",
+        "width": 1600,
+        "height": 2400,
+        "format": "webp",
+        "bytes": 121688
+      },
+      {
+        "file": "flowers-1600.avif",
+        "width": 1600,
+        "height": 2400,
+        "format": "avif",
+        "bytes": 94397
+      }
+    ]
+  },
   "hero-landscape": {
     "photographer": "Rafa Sanfilippo",
     "sourceUrl": "https://unsplash.com/photos/a-bride-and-groom-laughing-together-on-their-wedding-day-cWLEzYAcI3Q",

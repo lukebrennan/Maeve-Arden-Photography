@@ -33,7 +33,7 @@ Maeve Arden Photography is the confirmed brand name. The identity should be mode
 
 ## Evidence on Hand
 
-Eight verified, credited Unsplash photographs are bundled in responsive AVIF/WebP formats. Sources and licensing are recorded in IMAGE-SOURCES.md and assets/images/manifest.json. These are visual studies, not commissioned work by a real Maeve Arden. There are no genuine customer testimonials, awards or booking statistics to invent.
+Seventeen verified, credited Unsplash source photographs are bundled in responsive AVIF/WebP formats. Sources and licensing are recorded in IMAGE-SOURCES.md and assets/images/manifest.json. Fourteen photographs are curated into the main portfolio, with explicit home thumbnail choices and a six-image gallery rail. These are visual studies, not commissioned work by a real Maeve Arden. There are no genuine customer testimonials, awards or booking statistics to invent.
 
 ## Product Principles
 

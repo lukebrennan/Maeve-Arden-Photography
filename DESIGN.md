@@ -63,7 +63,6 @@ typography:
     letterSpacing: "-.025em"
 rounded:
   square: '0'
-  indicator: 50%
 spacing:
   gutter: clamp(20px,3.6vw,64px)
   space: clamp(64px,7vw,112px)
@@ -111,6 +110,17 @@ components:
   enquiry-panel:
     backgroundColor: "{colors.paper}"
     padding: 32px
+  scene-preview:
+    backgroundColor: transparent
+    textColor: "{colors.ink}"
+    padding: 9px 0
+  photo-open-action:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    padding: 9px 12px
+  photo-open-action-hover:
+    backgroundColor: "{colors.charcoal}"
+    textColor: "{colors.paper}"
 ---
 
 # Design System: Maeve Arden Photography
@@ -127,7 +137,7 @@ An open photographic folio in warm cream and dark charcoal. The user explicitly 
 - Refined upright serif display type paired with a restrained sans serif UI.
 - Unequal image groupings and subject-aware crops.
 - Flat square controls, thin warm-grey rules and visible underlined links.
-- User-directed scene changes with brief, optional motion.
+- Explicit photographic preview choices, manual photo browsing and brief, optional motion.
 
 ## Colors
 
@@ -169,11 +179,11 @@ Unequal columns recur in stories, the journal and image-and-copy sections. Readi
 The main responsive thresholds are:
 
 - At (1100px) and below, navigation gaps and folio columns tighten; enquiry fields collapse to one column and panel padding reduces (25px).
-- At (900px) and below, the desktop navigation becomes a menu dialog; the header shortens (80px), and folio place controls move above its two photographs. Pricing changes from three content columns to two.
-- At (600px) and below, the header is (77px), most split sections stack, article contents stop sticking, and story images form one column. The folio shows one main photograph; the secondary photograph is hidden. Gallery columns reduce to one, while the collection selector remains a compact two-column choice. The enquiry aside follows the form and its photograph is hidden.
+- At (900px) and below, the desktop navigation becomes a menu dialog and the header shortens (80px). Folio thumbnail choices become a horizontal row below its two photographs. Pricing changes from three content columns to two; photo-rail items occupy (38%) of the rail width.
+- At (600px) and below, the header is (77px), most split sections stack, article contents stop sticking, and story images form one column. The folio shows one main photograph, with paging beneath it and three full-width thumbnail rows below; the secondary photograph is hidden. The main photograph uses a landscape ratio (1.3). Photo-rail items occupy (76%) of the rail width, leaving a clear glimpse of the next image. Gallery columns reduce to one, while the collection selector remains a compact two-column choice. The enquiry aside follows the form and its photograph is hidden.
 - At (1600px) and above, only the home display heading receives its documented size adjustment.
 
-Desktop gallery photographs retain their native proportions in two columns (52px gap), with the second tile offset (60px). They become a single column without the offset on small screens. Story galleries start with a full-width photograph, then two unevenly positioned photographs; the first is contained within a maximum height (780px), not forced into a cropped frame.
+Desktop portfolio photographs retain their native proportions in two columns (52px gap), with the second tile offset (60px). They become a single column without the offset on small screens. Story galleries start with a full-width photograph, then paired photographs with an offset third image; the first is contained within a maximum height (780px), not forced into a cropped frame. The home rail is a separate, horizontal photographic sequence with snap alignment; it does not change the portfolio gallery’s native-ratio layout.
 
 ## Elevation & Depth
 
@@ -187,7 +197,7 @@ The system is flat at rest. Tonal fields, scale and borders establish hierarchy.
 
 ## Shapes
 
-Interface panels, buttons, rules and image frames use square geometry. Text fields explicitly use the `square` corner token. Place-selection indicators use the circular `indicator` token; they are functional selected-state marks. Thin strokes (1px) define controls and dividers; selected gallery filters and invalid inputs use stronger strokes (2px).
+Interface panels, buttons, rules and image frames use square geometry. Text fields explicitly use the `square` corner token. Thin strokes (1px) define controls and dividers; selected thumbnail rows, selected gallery filters and invalid inputs use stronger strokes (2px). Thumbnail rows use authored SVG arrows rather than circular selection indicators.
 
 The header and footer use the serif MA plus full-name SVG lockup. The M and A remain separate for immediate recognition. Narrow screens use the name-only wordmark. The favicon uses the same MA with stronger hairlines on cream. Logo lettering is outlined, with no external font or raster dependency. UI icons are small inline SVG strokes.
 
@@ -206,21 +216,31 @@ Compact, direct actions use a solid tonal rectangle.
 
 ### Navigation
 
-The sticky lake-blue header has a thin bottom rule. Desktop links use normal case and show an underline on hover or the current page. Below the navigation breakpoint, a labelled menu button opens a native dialog aligned to the right, with a maximum width (460px), large links (26px) and inline SVG close control. Escape, explicit close and focus return are preserved. The no-JavaScript fallback keeps the ordinary navigation links available.
+The sticky cream header has a thin bottom rule. Desktop links use normal case and show an underline on hover or the current page. Below the navigation breakpoint, a labelled menu button opens a native dialog aligned to the right, with a maximum width (460px), large links (26px) and inline SVG close control. Escape, explicit close and focus return are preserved. The no-JavaScript fallback keeps the ordinary navigation links available.
 
-On small screens a fixed “Check your date” action can appear near the bottom edge. Its visibility responds to the practical enquiry link, closing invitation and footer, avoiding a duplicate action when one of those is in view.
+On small screens a fixed “Check your date” action can appear near the bottom edge. It stays hidden while the home folio or photo rail is in view, keeping photograph controls clear, and while the closing invitation or footer is visible.
 
-### Place index and folio
+### Photographic previews and folio
 
-This home-specific signature groups a large landscape image, a narrower portrait and a small place index. Selected places use a heavier blue label and filled circle. Choices are user-triggered; there is no autoplay. The implementation decodes the next pair before replacing it, indicates loading with muted controls and `aria-busy`, then updates both photographs, the caption and story link together.
+This home-specific signature pairs a large landscape image with a narrower portrait and three explicit photographic thumbnail choices. Each button combines a real thumbnail, a descriptive name, supporting category and authored SVG arrow. Desktop choices form a narrow vertical index; tablet choices sit in a row beneath the photographs; phone choices become full-width rows beneath the main image. The selected row uses a charcoal bottom rule (2px), a stronger label (550) and a rotated arrow. Hover adds the paper field; focus uses the shared visible outline.
 
-The scene-change animation lasts (300ms) with `cubic-bezier(.16,1,.3,1)`, using a slight clip reveal and brightness change. Reduced-motion preferences remove it, all other animations and transitions, and smooth scrolling. Keep image-specific subject positioning: the London photograph uses the bottom of its image (`50% 100%`), while the celebration uses an upper framing (`50% 30%`). These are photo treatments, not global crop defaults.
+The three choices are “All the feeling,” “Room to breathe” and “Just the two of you.” Previous and next selection buttons beneath the main photograph use (44px) square controls, with a tabular (1 / 3) count and live feedback. Both control methods select the same wrapping sequence; there is no autoplay. Changing a selection decodes the next responsive image pair before replacing both photographs, the caption and story destination. Loading dims the thumbnail choices (.65), sets `aria-busy` and announces “Loading photographs…”; success announces the selected scene, and failure leaves the current photographs in place with a retry message. Rapid requests only apply the latest selection. Without JavaScript, the initial photography and direct story links remain available.
 
-### Gallery and image viewer
+The scene-change animation lasts (300ms) with `cubic-bezier(.16,1,.3,1)`, using a slight clip reveal and brightness change. Reduced-motion preferences remove it, all other animations and transitions, and smooth scrolling. Current portrait selection uses a deliberate bridge-photo crop (`50% 55%`). Individual photograph crops remain local treatments rather than a global default.
 
-Category filters are flat text controls with a minimum height (50px), reducing to (44px) on small screens. The selected category has a blue underline (2px) and weight (500), with `aria-pressed` carrying the state. Filtering changes only visibility, and the photograph count updates in a live status.
+### Home photographic rail
 
-Tiles preserve natural image ratios and expose a small paper-backed expand control. Their image viewer contains the entire image with `object-fit: contain`; it provides visible previous, next and close controls, arrow-key navigation, a count and photographer credit. Closing returns focus to the original photograph. Without the enhanced viewer, image links still lead to image files.
+Six photographs form a manually scrollable sequence. Desktop items occupy (29%) of the rail with gaps (28px); tablet and phone widths follow the Layout rules. Each print uses a portrait-shaped frame (.82 aspect ratio), a caption and a visible “View photograph” action with an authored expand SVG. Hover or keyboard focus changes that action from paper to charcoal with inverse text. The rail is a labelled, keyboard-focusable region and retains its native horizontal scrollbar, touch and trackpad scrolling, and snap alignment.
+
+Previous and next controls move by one print plus its gap. They use (44px) square targets; the relevant end control is disabled at each boundary with opacity (.35). Scripted scrolling is smooth except under reduced-motion preferences, where it is instant. The six initially lazy images are warmed only as the rail approaches the viewport (400px margin); the observer then disconnects. This does not preload the full image library during the opening view.
+
+### Portfolio and image viewer
+
+The portfolio curates fourteen photographs from a seventeen-source library. Category filters are flat text controls with a minimum height (50px), reducing to (44px) on small screens. The selected category has a charcoal underline (2px) and weight (500), with `aria-pressed` carrying the state. Filtering changes visibility, and the photograph count updates in a live status. Each of the three visual story pages presents five photographs.
+
+Portfolio tiles preserve natural image ratios and expose a small paper-backed expand control. The shared viewer opens from the home rail, portfolio or story images and contains the entire photograph with `object-fit: contain`. It provides visible previous, next and close controls, a live count and a photographer-credit link with the existing authored SVG arrow. Navigation wraps through the currently visible photographs; a one-image set disables previous and next. Native modal behavior and the keyboard trap preserve focus, Escape closes, left/right arrow keys move between images, and closing returns focus to the opening photograph. Without the enhanced viewer, image links still lead to image files.
+
+On touch screens the image area accepts a single-finger horizontal swipe only when travel exceeds (60px) and is more than (1.5) times its vertical travel; it preserves vertical panning and pinch zoom. Credit text and destination update from the local provenance manifest, with the credits page as fallback. A late credit response cannot overwrite the currently displayed photograph’s credit.
 
 ### Pricing bands
 
@@ -242,7 +262,7 @@ Journal items use unboxed photographs and titles; home article metadata follows 
 
 - Do use the cream and charcoal fields, refined Bodoni Moda headings, compact Geologica UI and visible underlined links.
 - Do preserve the subject when a photograph is cropped, and retain native ratios in the gallery and contained images in the viewer.
-- Do make scene changes user-triggered and honor reduced-motion preferences.
+- Do keep photographic choices and rail controls explicit, make scene changes user-triggered and honor reduced-motion preferences.
 - Do keep selected, focus, invalid, disabled and loading states distinguishable through more than copy alone.
 - Do preserve the full-name identity, clear MA favicon and unobtrusive fictional-brand and enquiry-demo disclosures.
 - Do edit the maintained stylesheet and generator when extending the site; the served CSS and HTML are generated outputs, and the public export excludes development contracts.
