@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-15T06:01:54Z",
+  "title": "Design System: Maeve Arden Photography",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Lake blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.01205 223.53)",
+          "oklch(26.43% 0.01205 223.53)",
+          "oklch(37.86% 0.01205 223.53)",
+          "oklch(49.29% 0.01205 223.53)",
+          "oklch(60.71% 0.01205 223.53)",
+          "oklch(72.14% 0.01205 223.53)",
+          "oklch(83.57% 0.01205 223.53)",
+          "oklch(95.00% 0.01205 223.53)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Cool paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.00249 165.08)",
+          "oklch(26.43% 0.00249 165.08)",
+          "oklch(37.86% 0.00249 165.08)",
+          "oklch(49.29% 0.00249 165.08)",
+          "oklch(60.71% 0.00249 165.08)",
+          "oklch(72.14% 0.00249 165.08)",
+          "oklch(83.57% 0.00249 165.08)",
+          "oklch(95.00% 0.00249 165.08)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Dark ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.02255 230.01)",
+          "oklch(26.43% 0.02255 230.01)",
+          "oklch(37.86% 0.02255 230.01)",
+          "oklch(49.29% 0.02255 230.01)",
+          "oklch(60.71% 0.02255 230.01)",
+          "oklch(72.14% 0.02255 230.01)",
+          "oklch(83.57% 0.02255 230.01)",
+          "oklch(95.00% 0.02255 230.01)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Slate",
+        "tonalRamp": [
+          "oklch(15.00% 0.03009 232.27)",
+          "oklch(26.43% 0.03009 232.27)",
+          "oklch(37.86% 0.03009 232.27)",
+          "oklch(49.29% 0.03009 232.27)",
+          "oklch(60.71% 0.03009 232.27)",
+          "oklch(72.14% 0.03009 232.27)",
+          "oklch(83.57% 0.03009 232.27)",
+          "oklch(95.00% 0.03009 232.27)"
+        ]
+      },
+      "blue": {
+        "role": "primary",
+        "displayName": "Ink blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.05606 234.83)",
+          "oklch(26.43% 0.05606 234.83)",
+          "oklch(37.86% 0.05606 234.83)",
+          "oklch(49.29% 0.05606 234.83)",
+          "oklch(60.71% 0.05606 234.83)",
+          "oklch(72.14% 0.05606 234.83)",
+          "oklch(83.57% 0.05606 234.83)",
+          "oklch(95.00% 0.05606 234.83)"
+        ]
+      },
+      "blue-hover": {
+        "role": "primary",
+        "displayName": "Deep action blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.05181 235.85)",
+          "oklch(26.43% 0.05181 235.85)",
+          "oklch(37.86% 0.05181 235.85)",
+          "oklch(49.29% 0.05181 235.85)",
+          "oklch(60.71% 0.05181 235.85)",
+          "oklch(72.14% 0.05181 235.85)",
+          "oklch(83.57% 0.05181 235.85)",
+          "oklch(95.00% 0.05181 235.85)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Cool rule",
+        "tonalRamp": [
+          "oklch(15.00% 0.02374 229.19)",
+          "oklch(26.43% 0.02374 229.19)",
+          "oklch(37.86% 0.02374 229.19)",
+          "oklch(49.29% 0.02374 229.19)",
+          "oklch(60.71% 0.02374 229.19)",
+          "oklch(72.14% 0.02374 229.19)",
+          "oklch(83.57% 0.02374 229.19)",
+          "oklch(95.00% 0.02374 229.19)"
+        ]
+      },
+      "light-line": {
+        "role": "neutral",
+        "displayName": "Blue rule",
+        "tonalRamp": [
+          "oklch(15.00% 0.04180 234.06)",
+          "oklch(26.43% 0.04180 234.06)",
+          "oklch(37.86% 0.04180 234.06)",
+          "oklch(49.29% 0.04180 234.06)",
+          "oklch(60.71% 0.04180 234.06)",
+          "oklch(72.14% 0.04180 234.06)",
+          "oklch(83.57% 0.04180 234.06)",
+          "oklch(95.00% 0.04180 234.06)"
+        ]
+      },
+      "inverse-muted": {
+        "role": "neutral",
+        "displayName": "Pale blue text",
+        "tonalRamp": [
+          "oklch(15.00% 0.01881 227.30)",
+          "oklch(26.43% 0.01881 227.30)",
+          "oklch(37.86% 0.01881 227.30)",
+          "oklch(49.29% 0.01881 227.30)",
+          "oklch(60.71% 0.01881 227.30)",
+          "oklch(72.14% 0.01881 227.30)",
+          "oklch(83.57% 0.01881 227.30)",
+          "oklch(95.00% 0.01881 227.30)"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Validation red",
+        "tonalRamp": [
+          "oklch(15.00% 0.15278 26.62)",
+          "oklch(26.43% 0.15278 26.62)",
+          "oklch(37.86% 0.15278 26.62)",
+          "oklch(49.29% 0.15278 26.62)",
+          "oklch(60.71% 0.15278 26.62)",
+          "oklch(72.14% 0.15278 26.62)",
+          "oklch(83.57% 0.15278 26.62)",
+          "oklch(95.00% 0.15278 26.62)"
+        ]
+      },
+      "viewer": {
+        "role": "neutral",
+        "displayName": "Viewer ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.03772 235.15)",
+          "oklch(26.43% 0.03772 235.15)",
+          "oklch(37.86% 0.03772 235.15)",
+          "oklch(49.29% 0.03772 235.15)",
+          "oklch(60.71% 0.03772 235.15)",
+          "oklch(72.14% 0.03772 235.15)",
+          "oklch(83.57% 0.03772 235.15)",
+          "oklch(95.00% 0.03772 235.15)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Home display",
+        "purpose": "Compact home heading above the folio; responsive exceptions are recorded in DESIGN.md."
+      },
+      "page-title": {
+        "displayName": "Page title",
+        "purpose": "Inner-page and article headings."
+      },
+      "headline": {
+        "displayName": "Section headline",
+        "purpose": "Main section headings with local content-driven adjustments."
+      },
+      "title": {
+        "displayName": "Content title",
+        "purpose": "Smaller headings; journal, pricing and photograph titles have documented local sizes."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Light reading and supporting copy, bounded to a comfortable measure."
+      },
+      "article-body": {
+        "displayName": "Article body",
+        "purpose": "Longer reading with more generous leading."
+      },
+      "label": {
+        "displayName": "Action label",
+        "purpose": "Primary button labels; compact navigation and metadata use smaller local sizes."
+      },
+      "brand": {
+        "displayName": "Full-name wordmark",
+        "purpose": "Maeve Arden identity in the header and footer."
+      }
+    },
+    "shadows": [
+      {
+        "name": "mobile-enquiry",
+        "value": "0 5px 20px rgb(0 0 0/.17)",
+        "purpose": "Separates the fixed mobile enquiry action from scrolling photography; not a card treatment."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Easing for the user-directed folio reveal."
+      },
+      {
+        "name": "folio-unfold",
+        "value": ".3s",
+        "purpose": "Clip inset from 0 1.5% 0 0 to 0 and brightness from .94 to 1 after a scene changes."
+      },
+      {
+        "name": "button-background",
+        "value": ".18s",
+        "purpose": "Primary, light and outline button background transitions."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "Under prefers-reduced-motion: reduce, all animations and transitions are removed and smooth scrolling becomes automatic."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact",
+        "value": "1100px"
+      },
+      {
+        "name": "navigation",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "600px"
+      },
+      {
+        "name": "wide-display",
+        "value": "1600px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main enquiry and continuation action; small header instances reduce to 44px minimum height.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#enquiry-preview\">Check your date</a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 23px;font-family:Geologica,sans-serif;font-size:14px;font-weight:400;line-height:1.4;text-align:center;text-decoration:none;border:1px solid transparent;transition:background .18s;background:var(--blue,#254b60);color:var(--paper,#f5f7f6)}.ds-btn-primary:hover{background:#17394c}.ds-btn-primary:focus-visible{outline:2px solid currentColor;outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-btn-primary,.ds-btn-light,.ds-btn-outline{transition:none}}"
+    },
+    {
+      "name": "Light button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "A paper action on a blue field, including the featured collection.",
+      "html": "<div class=\"ds-blue-field\"><a class=\"ds-btn-light\" href=\"#collection-preview\">Choose The Story</a></div>",
+      "css": ".ds-blue-field{background:var(--blue,#254b60);padding:24px}.ds-btn-light{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 23px;font-family:Geologica,sans-serif;font-size:14px;font-weight:400;line-height:1.4;text-align:center;text-decoration:none;border:1px solid transparent;transition:background .18s;background:var(--paper,#f5f7f6);color:var(--blue,#254b60)}.ds-btn-light:hover{background:var(--ground,#dce6ea)}.ds-btn-light:focus-visible{outline:2px solid currentColor;outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-btn-primary,.ds-btn-light,.ds-btn-outline{transition:none}}"
+    },
+    {
+      "name": "Outline button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "A secondary action with the same compact rectangular silhouette.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#collections-preview\">Explore the collections</a>",
+      "css": ".ds-btn-outline{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 23px;font-family:Geologica,sans-serif;font-size:14px;font-weight:400;line-height:1.4;text-align:center;text-decoration:none;border:1px solid transparent;transition:background .18s;background:transparent;border-color:var(--blue,#254b60);color:var(--blue,#254b60)}.ds-btn-outline:hover{background:var(--blue,#254b60);color:var(--paper,#f5f7f6)}.ds-btn-outline:focus-visible{outline:2px solid currentColor;outline-offset:5px;}@media(prefers-reduced-motion:reduce){.ds-btn-primary,.ds-btn-light,.ds-btn-outline{transition:none}}"
+    },
+    {
+      "name": "Text link",
+      "kind": "button",
+      "description": "The regular underlined text action used around photography and supporting copy.",
+      "html": "<a class=\"ds-text-link\" href=\"#story-preview\">View the story</a>",
+      "css": ".ds-text-link{display:inline-flex;gap:14px;align-items:center;min-height:44px;font-family:Geologica,sans-serif;font-size:14px;font-weight:400;line-height:1.65;color:var(--ink,#243239);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}.ds-text-link:hover{text-decoration-color:currentColor}.ds-text-link:focus-visible{outline:2px solid currentColor;outline-offset:5px;}"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Visible labels, square transparent fields, shared focus and explicit invalid and disabled states.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-venue\">Venue or location <span>(optional)</span></label><input id=\"ds-venue\" type=\"text\" placeholder=\"A venue, a town, a country…\"></div>",
+      "css": ".ds-field{font-family:Geologica,sans-serif;color:var(--ink,#243239)}.ds-field>label{display:block;font-size:13px;font-weight:300;line-height:1.65;margin-bottom:10px}.ds-field label>span{color:var(--muted,#4c606b);font-size:11px}.ds-field>input{display:block;box-sizing:border-box;width:100%;min-height:48px;border:1px solid var(--line,#a5b7c0);border-radius:0;padding:11px;background:transparent;color:var(--ink,#243239);font-family:Geologica,sans-serif;font-size:14px;font-weight:300;line-height:1.65;caret-color:var(--blue,#254b60)}.ds-field>input::placeholder{color:var(--muted,#4c606b);opacity:1}.ds-field>input:hover{cursor:text}.ds-field>input:focus-visible{outline:2px solid currentColor;outline-offset:5px;}.ds-field>input[aria-invalid=\"true\"]{border:2px solid var(--error,#9d2926)}.ds-field>input:disabled{opacity:.55;background:var(--ground,#dce6ea)}@media(max-width:600px){.ds-field>input{font-size:16px}}"
+    },
+    {
+      "name": "Desktop navigation",
+      "kind": "nav",
+      "refersTo": "navigation-link",
+      "description": "Quiet normal-case links; underline marks the current page and hover. The full site changes to a dialog at 900px.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Sample navigation\"><a href=\"#work-preview\" aria-current=\"page\">Selected work</a><a href=\"#experience-preview\">The experience</a><a href=\"#about-preview\">About</a></nav>",
+      "css": ".ds-nav{display:flex;gap:30px;align-items:center;background:var(--ground,#dce6ea);color:var(--ink,#243239);font-family:Geologica,sans-serif;font-weight:300;line-height:1.65}.ds-nav>a{min-height:44px;display:flex;align-items:center;text-decoration:none;font-size:13px;color:inherit;text-decoration-thickness:1px;text-underline-offset:5px}.ds-nav>a:hover,.ds-nav>a[aria-current]{text-decoration:underline}.ds-nav>a:focus-visible{outline:2px solid currentColor;outline-offset:5px;}"
+    },
+    {
+      "name": "Gallery filters",
+      "kind": "custom",
+      "description": "Flat filter controls with a pressed-state underline; these are not filled chips.",
+      "html": "<div class=\"ds-filters\" aria-label=\"Sample photograph categories\"><button type=\"button\" aria-pressed=\"true\">All photographs</button><button type=\"button\" aria-pressed=\"false\">People</button><button type=\"button\" aria-pressed=\"false\">Places</button></div>",
+      "css": ".ds-filters{display:flex;flex-wrap:wrap;gap:28px;border-bottom:1px solid var(--line,#a5b7c0);font-family:Geologica,sans-serif;color:var(--ink,#243239)}.ds-filters button{min-height:50px;background:transparent;padding:7px 0;font-family:Geologica,sans-serif;font-weight:300;line-height:1.65;font-size:14px;color:inherit;cursor:pointer;border:0;border-bottom:2px solid transparent}.ds-filters button:hover{background:transparent}.ds-filters button[aria-pressed=\"true\"]{font-weight:500;border-color:var(--blue,#254b60);color:var(--blue,#254b60)}.ds-filters button:focus-visible{outline:2px solid currentColor;outline-offset:5px;}@media(max-width:600px){.ds-filters{gap:20px}.ds-filters button{font-size:12px;min-height:44px}}"
+    },
+    {
+      "name": "Place index",
+      "kind": "custom",
+      "description": "The user-controlled folio index combines a label, thin rule and filled selected-state circle.",
+      "html": "<div class=\"ds-place-index\" aria-label=\"Sample folio places\"><button type=\"button\" aria-pressed=\"true\">Lake District</button><button type=\"button\" aria-pressed=\"false\">London</button><button type=\"button\" aria-pressed=\"false\">Celebrations</button></div>",
+      "css": ".ds-place-index{display:flex;flex-direction:column;gap:1px;max-width:250px;color:var(--ink,#243239);font-family:Geologica,sans-serif}.ds-place-index button{font-family:Geologica,sans-serif;font-size:14px;line-height:1.65;text-align:left;background:none;min-height:48px;padding:9px 0;border:0;border-bottom:1px solid var(--line,#a5b7c0);font-weight:300;color:inherit;position:relative;cursor:pointer}.ds-place-index button:hover{background:none}.ds-place-index button[aria-pressed=\"true\"]{font-weight:500;color:var(--blue,#254b60)}.ds-place-index button::after{content:\"\";position:absolute;right:2px;top:19px;width:7px;height:7px;border:1px solid var(--blue,#254b60);border-radius:50%}.ds-place-index button[aria-pressed=\"true\"]::after{background:var(--blue,#254b60)}.ds-place-index button:focus-visible{outline:2px solid currentColor;outline-offset:5px;}"
+    },
+    {
+      "name": "Collection option",
+      "kind": "custom",
+      "refersTo": "collection-option",
+      "description": "A native radio within a square row; selection adds blue stroke and lake-blue fill.",
+      "html": "<label class=\"ds-option\"><input type=\"radio\" name=\"ds-collection\" checked><span><strong>The Story</strong><small>From £2,850</small></span></label>",
+      "css": ".ds-option{display:flex;gap:11px;align-items:center;min-height:78px;box-sizing:border-box;border:1px solid var(--line,#a5b7c0);padding:12px;cursor:pointer;color:var(--ink,#243239);font-family:Geologica,sans-serif;line-height:1.65}.ds-option:hover{cursor:pointer}.ds-option:has(:checked){border-color:var(--blue,#254b60);background:var(--ground,#dce6ea)}.ds-option input{accent-color:var(--blue,#254b60);width:18px;height:18px;flex-shrink:0}.ds-option input:focus-visible{outline:2px solid currentColor;outline-offset:5px;}.ds-option strong{font-weight:450;font-size:14px;display:block}.ds-option small{display:block;font-size:12px;font-weight:300;margin-top:3px}"
+    },
+    {
+      "name": "Pricing band",
+      "kind": "card",
+      "refersTo": "pricing-band",
+      "description": "A flat collection row with separated description, price and coverage; mobile stacks the supporting content.",
+      "html": "<article class=\"ds-price-band\"><h3>The Intimate</h3><p>For a smaller celebration, with space for what matters.</p><div class=\"ds-price\"><span>From</span>£1,450</div><ul><li>Thoughtful coverage</li><li>A considered collection of photographs</li></ul><a class=\"ds-price-action\" href=\"#enquiry-preview\">Check your date</a></article>",
+      "css": ".ds-price-band{display:grid;grid-template-columns:1fr .6fr 1.2fr;gap:18px 50px;padding:42px 30px;border-top:1px solid var(--line,#a5b7c0);border-bottom:1px solid var(--line,#a5b7c0);align-items:start;color:var(--ink,#243239);font-family:Geologica,sans-serif;font-weight:300;line-height:1.65}.ds-price-band h3{margin:0;font-size:25px;grid-column:1;grid-row:1;font-weight:400;line-height:1.2;letter-spacing:-.035em}.ds-price-band>p{margin:0;grid-column:1;grid-row:2;font-size:14px;max-width:28ch}.ds-price{grid-column:2;grid-row:1/3;font-size:26px;letter-spacing:-.035em;font-variant-numeric:tabular-nums;line-height:1.4}.ds-price span{display:block;font-size:12px;letter-spacing:0}.ds-price-band ul{grid-column:3;grid-row:1/4;margin:0;padding:0;list-style:none;font-size:14px}.ds-price-band li{padding-bottom:4px}.ds-price-band li+li{margin-top:6px}.ds-price-action{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 23px;font-family:Geologica,sans-serif;font-size:14px;font-weight:400;line-height:1.4;text-align:center;text-decoration:none;border:1px solid transparent;transition:background .18s;grid-column:1/3;justify-self:start;margin-top:7px;background:var(--blue,#254b60);color:var(--paper,#f5f7f6)}.ds-price-action:hover{background:#17394c}.ds-price-action:focus-visible{outline:2px solid currentColor;outline-offset:5px;}@media(max-width:900px){.ds-price-band{padding:30px 24px;grid-template-columns:1fr 1fr;gap:18px 25px}.ds-price-band ul{grid-column:2;grid-row:2/4}.ds-price{grid-column:2;grid-row:1}.ds-price-action{grid-column:1;grid-row:3;max-width:220px}}@media(max-width:600px){.ds-price-band{grid-template-columns:1fr auto;padding:26px 20px;gap:18px}.ds-price-band h3,.ds-price{font-size:23px}.ds-price-band>p{grid-column:1/-1;grid-row:2;max-width:35ch}.ds-price-band ul{grid-column:1/-1;grid-row:3;font-size:13px}.ds-price-action{grid-column:1/-1;grid-row:4;max-width:none;font-size:13px}}@media(prefers-reduced-motion:reduce){.ds-price-action{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Folded atlas",
+    "overview": "A cool, open folio gives photographs the largest and most varied surfaces. A single modern sans serif keeps the interface compact, while uneven image groupings, practical margins and quiet rules create an authored rhythm. The full-name wordmark feels professional without competing with the work.\n\nThis system uses flat fields of lake blue, cool paper and deep ink blue. It supports browsing, reading and an enquiry preview through modest headings, visible links and restrained controls. Photography supplies the warmth and texture; the interface stays clear and spare.",
+    "keyCharacteristics": [
+      "Cool tonal surfaces with deep blue actions.",
+      "One locally served type family in normal case.",
+      "Unequal image groupings with deliberate subject preservation.",
+      "Flat, square controls and thin dividing rules.",
+      "User-directed changes with brief, optional motion."
+    ],
+    "rules": [
+      {
+        "name": "The Tonal Field Rule",
+        "body": "Use the established blue and paper fields to separate major content; recurring cards and content bands stay flat.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Build hierarchy with Geologica's size, weight and spacing; keep display emphasis upright and normal case.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Content Rule",
+        "body": "Reserve the existing shadow for the floating mobile enquiry action; ordinary panels, journal items and pricing remain flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use the cool tonal fields, compact Geologica hierarchy and visible underlined links.",
+      "Do preserve the subject when a photograph is cropped, and retain native ratios in the gallery and contained images in the viewer.",
+      "Do make scene changes user-triggered and honor reduced-motion preferences.",
+      "Do keep selected, focus, invalid, disabled and loading states distinguishable through more than copy alone.",
+      "Do preserve the full-name identity, clear MA favicon and unobtrusive fictional-brand and enquiry-demo disclosures.",
+      "Do edit the maintained stylesheet and generator when extending the site; the served CSS and HTML are generated outputs, and the public export excludes development contracts."
+    ],
+    "donts": [
+      "Don't introduce oversized or italic display typography, a second display family, or a boxed monogram in the header.",
+      "Don't turn the native gallery photographs into equal-height crops or the collection bands into generic floating cards.",
+      "Don't remove visible focus, image credits, current navigation states or the enquiry preview's operating limits.",
+      "Don't promote hidden legacy eyebrow markup, decorative numbering or text-arrow characters into new component conventions."
+    ]
+  }
+}

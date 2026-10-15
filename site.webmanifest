@@ -3,11 +3,11 @@
   "short_name": "Maeve Arden",
   "start_url": "./index.html",
   "display": "browser",
-  "background_color": "#f7f5ef",
-  "theme_color": "#f7f5ef",
+  "background_color": "#dce6ea",
+  "theme_color": "#dce6ea",
   "icons": [
     {
-      "src": "assets/icons/favicon.svg?v=54630f4a",
+      "src": "assets/icons/favicon.svg?v=4e288a1d",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"

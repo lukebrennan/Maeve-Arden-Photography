@@ -34,3 +34,15 @@ Interaction checks passed:
 This records browser and static checks, not an independent WCAG conformance audit, a conversion-rate experiment, a Lighthouse measurement or field Core Web Vitals data. Clipboard copying is implemented with a browser permission-aware fallback; the browser interaction check did not overwrite the user's clipboard.
 
 The form is a browser-only demonstration. It does not send enquiries, check calendar availability or reserve dates. GitHub Pages deployment is a separate step after review.
+
+## October 2026 visual redesign
+
+Replaced the cream/sage serif identity with a lake-blue photographic folio and local variable Geologica. All fifteen pages retain their content, source credits and primary functions. The home place selector changes the photo pairing, caption and story link only on visitor input; reduced-motion preferences disable its short reveal. The header uses the full name, removing the ambiguous monogram from navigation.
+
+Build verification: all 15 pages, links/fragments, unique metadata, valid JSON-LD, sitemap and 72 image variants pass the static checks; JavaScript syntax passes. Captured home at 1440, 390 and the user's 1280 pixel width; seven supporting page classes at 1440 and 390. DOM checks found no horizontal overflow or missing in-viewport images in those captures. Tested London selector, collection preselection, required-date guidance, flexible date, names/email enquiry preview, gallery details filter, viewer and close.
+
+One design detector run identified undersized functional text, journal heading hierarchy and initial viewer image source; these were corrected. Padding reports refer to full-width sections with inset containers and are passed to the independent finish reviewer. Local images carry creator/source/license metadata with unchanged decoded pixels. The clean dist export excludes development briefs and tooling.
+
+No Lighthouse score, field Core Web Vitals result or real booking availability is claimed. Enquiry remains an explicitly labelled browser-only preview.
+
+Independent Impeccable finish review: **ship**. All 19 final captures were valid. The review verified type, colour, photo framing, the place selector, responsive adaptation, pricing/enquiry honesty, next-story navigation and journal hierarchy. Three material findings were corrected and rescored resolved. Browser keyboard checks also confirmed mobile-menu Escape, gallery arrow-key progression and focus return after Escape.

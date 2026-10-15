@@ -14,8 +14,8 @@
       entries.forEach(entry => visibleCallsToAction.set(entry.target, entry.isIntersecting));
       stickyEnquiry.hidden = [...visibleCallsToAction.values()].some(Boolean);
     });
-    const targets = [$('.hero-actions .button'), $('.closing-cta'), $('.site-footer')].filter(Boolean);
-    if ($('.hero-actions .button')) stickyEnquiry.hidden = true;
+    const targets = [$('.folio-practical .text-link'), $('.closing-cta'), $('.site-footer')].filter(Boolean);
+    if ($('.folio-practical .text-link')) stickyEnquiry.hidden = true;
     targets.forEach(target => observer.observe(target));
   }
 
@@ -144,6 +144,68 @@
       document.body.classList.remove('dialog-open');
       trigger?.focus();
     });
+  }
+
+  // A small, user-directed folio. Default photography remains usable without JS.
+  const folio = $('[data-folio]');
+  if (folio) {
+    const scenes = {
+      lake: {main:'still-water', secondary:'hero', title:'Still Water', place:'Lake District', href:'stories/still-water.html'},
+      city: {main:'city-softened', secondary:'bridal', title:'City, Softened', place:'London', href:'stories/city-softened.html'},
+      celebration: {main:'celebration', secondary:'table', title:'After the Quiet', place:'Celebrations', href:'stories/after-the-quiet.html'}
+    };
+    const controls = $$('[data-place]', folio);
+    const primary = $('[data-folio-primary]', folio);
+    const secondary = $('[data-folio-secondary]', folio);
+    const caption = $('[data-folio-caption]', folio);
+    const story = $('[data-folio-story]', folio);
+    let request = 0;
+    $('[data-folio-controls]', folio).hidden = false;
+    const prepare = async (key, target) => {
+      const template = $('picture', target).cloneNode(true);
+      const img = $('img', template);
+      const sizes = img.sizes;
+      const srcset = format => [480,800,1200,1600].map(w => `${prefix}assets/images/${key}-${w}.${format} ${w}w`).join(', ');
+      $('source', template).srcset = srcset('avif');
+      img.srcset = srcset('webp');
+      img.src = `${prefix}assets/images/${key}-800.webp`;
+      img.loading = 'eager';
+      // Decode the responsive picture offscreen in memory, without an extra request.
+      const probe = new Image();
+      probe.sizes = sizes;
+      probe.srcset = srcset('avif');
+      probe.src = `${prefix}assets/images/${key}-800.avif`;
+      try { await probe.decode(); } catch { /* The WebP fallback remains available. */ }
+      const descriptions = {'still-water':'Newlyweds standing together at the end of a wooden jetty',hero:'Bride and groom sharing a laugh on their wedding day','city-softened':'Bridal portrait beneath the arches of Tower Bridge in London',bridal:'Bridal portrait in soft black and white light',celebration:'Bride and groom surrounded by a shower of confetti',table:'Wedding reception table with flowers and candlelight'};
+      img.alt = descriptions[key];
+      img.width = probe.naturalWidth || 800;
+      img.height = probe.naturalHeight || 1000;
+      return template;
+    };
+    controls.forEach(button => button.addEventListener('click', async () => {
+      if (button.getAttribute('aria-pressed') === 'true') return;
+      const current = ++request;
+      const scene = scenes[button.dataset.place];
+      folio.dataset.loading = 'true';
+      folio.setAttribute('aria-busy', 'true');
+      const pictures = await Promise.all([prepare(scene.main, primary), prepare(scene.secondary, secondary)]);
+      if (current !== request) return;
+      primary.replaceChildren(pictures[0]);
+      secondary.replaceChildren(pictures[1]);
+      primary.dataset.photo = scene.main;
+      primary.href = story.href = scene.href;
+      primary.setAttribute('aria-label', `Explore ${scene.title}`);
+      secondary.href = `portfolio.html#${scene.secondary}`;
+      const title = document.createElement('strong');
+      title.textContent = scene.title;
+      caption.replaceChildren(title, document.createTextNode(`${scene.place} · A visual study`));
+      controls.forEach(control => control.setAttribute('aria-pressed', String(control === button)));
+      delete folio.dataset.loading;
+      folio.removeAttribute('aria-busy');
+      folio.classList.remove('is-changing');
+      // Reset this one authored transition only when a visitor changes the scene.
+      requestAnimationFrame(() => folio.classList.add('is-changing'));
+    }));
   }
 
   const form = $('[data-enquiry-form]');

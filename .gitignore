@@ -3,3 +3,7 @@ node_modules/
 .cache/
 reports/
 *.zip
+
+dist/
+__pycache__/
+.impeccable/review/

@@ -27,48 +27,50 @@ Files are under `assets/images/`. Each source has WebP and AVIF variants with su
 
 | Stem | Width × height | WebP bytes | AVIF bytes |
 | --- | --- | ---: | ---: |
-| `hero` | 480 × 720 | 26,750 | 22,253 |
-| `hero` | 800 × 1200 | 69,786 | 53,541 |
-| `hero` | 1200 × 1800 | 200,038 | 141,342 |
-| `hero` | 1600 × 2400 | 422,866 | 286,450 |
-| `still-water` | 480 × 320 | 19,980 | 13,213 |
-| `still-water` | 800 × 534 | 49,718 | 31,809 |
-| `still-water` | 1200 × 800 | 98,758 | 63,034 |
-| `still-water` | 1600 × 1067 | 156,372 | 98,866 |
-| `city-softened` | 480 × 720 | 36,960 | 23,946 |
-| `city-softened` | 800 × 1200 | 83,408 | 55,923 |
-| `city-softened` | 1200 × 1800 | 153,498 | 109,157 |
-| `city-softened` | 1600 × 2400 | 226,432 | 170,081 |
-| `celebration` | 480 × 600 | 16,124 | 14,096 |
-| `celebration` | 800 × 1000 | 30,104 | 26,101 |
-| `celebration` | 1200 × 1500 | 48,080 | 42,462 |
-| `celebration` | 1600 × 2000 | 69,372 | 62,591 |
-| `bridal` | 480 × 720 | 8,152 | 10,100 |
-| `bridal` | 800 × 1200 | 15,890 | 16,196 |
-| `bridal` | 1200 × 1800 | 28,796 | 30,485 |
-| `bridal` | 1600 × 2400 | 47,714 | 63,692 |
-| `table` | 480 × 640 | 29,636 | 20,130 |
-| `table` | 800 × 1067 | 57,744 | 39,703 |
-| `table` | 1200 × 1600 | 96,798 | 68,152 |
-| `table` | 1600 × 2133 | 139,084 | 98,596 |
-| `lake-sunset` | 480 × 270 | 19,516 | 13,195 |
-| `lake-sunset` | 800 × 450 | 55,518 | 34,521 |
-| `lake-sunset` | 1200 × 675 | 122,986 | 76,081 |
-| `lake-sunset` | 1600 × 900 | 205,910 | 128,315 |
-| `evening` | 480 × 320 | 7,074 | 9,211 |
-| `evening` | 800 × 533 | 16,486 | 17,328 |
-| `evening` | 1200 × 800 | 32,806 | 31,097 |
-| `evening` | 1600 × 1067 | 53,576 | 49,370 |
-| `hero-landscape` | 480 × 384 | 14,182 | 13,727 |
-| `hero-landscape` | 800 × 640 | 37,552 | 31,462 |
-| `hero-landscape` | 1200 × 960 | 113,754 | 80,738 |
-| `hero-landscape` | 1600 × 1280 | 232,730 | 161,562 |
+| `hero` | 480 × 720 | 27,512 | 23,069 |
+| `hero` | 800 × 1200 | 70,548 | 54,357 |
+| `hero` | 1200 × 1800 | 200,800 | 142,158 |
+| `hero` | 1600 × 2400 | 423,628 | 287,266 |
+| `still-water` | 480 × 320 | 20,732 | 14,020 |
+| `still-water` | 800 × 534 | 50,470 | 32,616 |
+| `still-water` | 1200 × 800 | 99,510 | 63,841 |
+| `still-water` | 1600 × 1067 | 157,124 | 99,673 |
+| `city-softened` | 480 × 720 | 37,700 | 24,741 |
+| `city-softened` | 800 × 1200 | 84,148 | 56,718 |
+| `city-softened` | 1200 × 1800 | 154,238 | 109,952 |
+| `city-softened` | 1600 × 2400 | 227,172 | 170,876 |
+| `celebration` | 480 × 600 | 16,866 | 14,893 |
+| `celebration` | 800 × 1000 | 30,846 | 26,898 |
+| `celebration` | 1200 × 1500 | 48,822 | 43,259 |
+| `celebration` | 1600 × 2000 | 70,114 | 63,388 |
+| `bridal` | 480 × 720 | 8,894 | 10,896 |
+| `bridal` | 800 × 1200 | 16,632 | 16,992 |
+| `bridal` | 1200 × 1800 | 29,538 | 31,281 |
+| `bridal` | 1600 × 2400 | 48,456 | 64,488 |
+| `table` | 480 × 640 | 30,384 | 20,932 |
+| `table` | 800 × 1067 | 58,492 | 40,505 |
+| `table` | 1200 × 1600 | 97,546 | 68,954 |
+| `table` | 1600 × 2133 | 139,832 | 99,398 |
+| `lake-sunset` | 480 × 270 | 20,260 | 13,994 |
+| `lake-sunset` | 800 × 450 | 56,262 | 35,320 |
+| `lake-sunset` | 1200 × 675 | 123,730 | 76,880 |
+| `lake-sunset` | 1600 × 900 | 206,654 | 129,114 |
+| `evening` | 480 × 320 | 7,812 | 10,003 |
+| `evening` | 800 × 533 | 17,224 | 18,120 |
+| `evening` | 1200 × 800 | 33,544 | 31,889 |
+| `evening` | 1600 × 1067 | 54,314 | 50,162 |
+| `hero-landscape` | 480 × 384 | 14,944 | 14,543 |
+| `hero-landscape` | 800 × 640 | 38,314 | 32,278 |
+| `hero-landscape` | 1200 × 960 | 114,516 | 81,554 |
+| `hero-landscape` | 1600 × 1280 | 233,492 | 162,378 |
+
+Every shipping raster embeds compact XMP fields identifying its original source, creator and Unsplash License. Impeccable origin text is also retained in AVIF/WebP sidecars and in the JPEG comment. These metadata additions preserve the decoded pixels.
 
 ## Hero and sharing crops
 
 `hero-landscape-{width}.webp` and `.avif` are a separate 5:4 crop of the hero, centered at 50% horizontally and 30% vertically. The crop preserves both faces and removes pixels outside the displayed composition. The full portrait hero variants remain available for portfolio use.
 
-`social.jpg` is a 1200 × 630 progressive JPEG, 136,769 bytes, cropped from the same hero photograph for social previews.
+`social.jpg` is a 1200 × 630 progressive JPEG, 137,860 bytes, cropped from the same hero photograph for social previews.
 
 ## Rebuilding
 

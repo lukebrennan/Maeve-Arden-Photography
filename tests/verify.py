@@ -51,6 +51,7 @@ class Document(HTMLParser):
 documents = {}
 for file in sorted(ROOT.rglob('*.html')):
     relative = file.relative_to(ROOT)
+    if any(part.startswith('.') or part == 'dist' for part in relative.parts): continue
     document = Document(relative)
     document.feed(file.read_text())
     documents[file] = document
