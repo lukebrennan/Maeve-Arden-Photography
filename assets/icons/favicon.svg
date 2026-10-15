@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
-  <rect width="48" height="48" rx="6" fill="#f7f5ef"/>
-  <g stroke="#343330" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
-    <path d="M7 34V14L15 27L23 14V34"/>
-    <path d="M27 34L34 14L41 34M30 26H38"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-labelledby="brand-title" fill="#343330">
+  <title id="brand-title">Maeve Arden MA monogram</title>
+  <desc>Custom Maeve Arden brand artwork drawn as vector paths. No external font required.</desc>
+  <rect width="48" height="48" rx="4" fill="#f7f5ef"/>
+  <g aria-label="M A" stroke="#343330" stroke-width="1.25" stroke-linejoin="round">
+    <path d="M12.282 34.392 4.821 13.997H7.397L13.61 30.783L19.42 13.997H19.983L12.939 34.392ZM5.09 13.997V33.6H7.075V34.124H2.634V33.6H4.539V14.52H2.5V13.997ZM24.264 13.997V14.52H22.385V33.6H24.264V34.124H17.675V33.6H19.836V13.997Z"/>
+    <path d="M31.411 27.831V27.307H40.106V27.831ZM36.483 13.608 43.407 33.6H45.5V34.124H37.718V33.6H40.468L35.195 17.271L29.506 33.6H32.351V34.124H26.447V33.6H28.902L35.933 13.608Z"/>
   </g>
 </svg>

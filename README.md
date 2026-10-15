@@ -69,3 +69,7 @@ If the deployment address changes, update `BASE` in `scripts/build.py` and regen
 ## Form behaviour
 
 The enquiry form does not check real availability, send mail, store personal details or reserve a date. It validates the details in the current page and creates a clearly labelled preview. No invented mailbox or social-media links are included. Clipboard copying happens only when the visitor chooses it. Production enquiry delivery would require a configured service, server-side validation and a revised privacy notice.
+
+## Logo
+
+The serif MA monogram and Maeve Arden Photography wordmark are committed as outlined SVG, with a reversed version, narrow-screen wordmark and matching favicon under assets/icons. They use Bodoni Moda and Geologica outlines and require no fonts to display. The optional scripts/brand-assets.py generator needs development-only fontTools and Brotli; normal page builds do not.

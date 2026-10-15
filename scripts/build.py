@@ -7,7 +7,7 @@ import hashlib
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://lukebrennan.github.io/Maeve-Arden-Photography/'
-LOGO_VERSION = hashlib.sha256((ROOT/'assets/icons/logo-mark.svg').read_bytes()).hexdigest()[:8]
+LOGO_VERSION = hashlib.sha256(b''.join((ROOT/'assets/icons'/name).read_bytes() for name in ('maeve-arden-logo.svg','maeve-arden-wordmark.svg'))).hexdigest()[:8]
 FAVICON_VERSION = hashlib.sha256((ROOT/'assets/icons/favicon.svg').read_bytes()).hexdigest()[:8]
 
 # Keep the maintained CSS readable and the served stylesheet compact.
@@ -47,7 +47,7 @@ def arrow():
     return ''
 
 def brand(prefix=''):
-    return f'<a class="brand" href="{prefix}index.html" aria-label="Maeve Arden Photography home"><span><span class="brand-name">Maeve Arden</span><span class="brand-sub">Wedding photography</span></span></a>'
+    return f'<a class="brand" href="{prefix}index.html" aria-label="Maeve Arden Photography home"><picture class="brand-picture"><source media="(max-width: 360px)" srcset="{prefix}assets/icons/maeve-arden-wordmark.svg?v={LOGO_VERSION}"><img class="brand-logo" src="{prefix}assets/icons/maeve-arden-logo.svg?v={LOGO_VERSION}" width="450" height="96" alt="" fetchpriority="high" decoding="async"></picture></a>'
 
 def nav(prefix, active, mobile=False):
     links = [('portfolio', 'Selected work'), ('weddings', 'The experience'), ('about', 'About'), ('journal', 'Journal')]
@@ -87,7 +87,14 @@ def page(path, title, desc, body, active='', image='hero', kind='WebPage', crumb
         # self-contained and point recovery links at the real project root.
         html = html.replace(f'<link rel="stylesheet" href="{prefix}assets/css/style.css?v={CSS_VERSION}">', '<style>'+css.replace('../fonts/',BASE+'assets/fonts/')+'</style>')
         html = re.sub(r'<script src="[^"]+" defer></script>', '', html)
-        html = re.sub(r'<header class="site-header">.*?</header>', f'<header class="site-header"><div class="header-inner"><a class="brand" href="{BASE}"><span><span class="brand-name">Maeve Arden</span><span class="brand-sub">Photography</span></span></a><a class="text-link" href="{BASE}">Home ↗</a></div></header>', html)
+        # Keep recovery branding sharp and self-contained at arbitrary URLs.
+        error_logo = (ROOT/'assets/icons/maeve-arden-wordmark.svg').read_text()
+        error_logo = re.sub(r'<title[^>]*>.*?</title>', '', error_logo, flags=re.S)
+        error_logo = re.sub(r' aria-labelledby="[^"]+"', '', error_logo)
+        error_logo = error_logo.replace('<svg ', '<svg class="brand-logo" aria-hidden="true" ')
+        error_logo = '\n'.join(line.rstrip() for line in error_logo.splitlines()).strip()
+        error_brand = f'<a class="brand" href="{BASE}" aria-label="Maeve Arden Photography home">{error_logo}</a>'
+        html = re.sub(r'<header class="site-header">.*?</header>', f'<header class="site-header"><div class="header-inner">{error_brand}<a class="text-link" href="{BASE}">Home</a></div></header>', html)
         html = re.sub(r'<dialog id="navigation-dialog".*?</dialog>', '', html)
         html = re.sub(r'<footer class="site-footer">.*?</footer>', '<footer class="site-footer"><div class="container footer-bottom"><p>A fictional brand & website concept by Luke Brennan.</p><a href="'+BASE+'credits.html">Image credits</a></div></footer>', html)
         html = re.sub(r'<a class="mobile-enquire".*?</a>', '', html)

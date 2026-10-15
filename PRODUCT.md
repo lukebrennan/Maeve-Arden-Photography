@@ -29,7 +29,7 @@ A responsive static website hosted publicly on GitHub Pages at https://lukebrenn
 
 ## Brand Commitments
 
-Maeve Arden Photography is the confirmed brand name. The identity should be modern, sleek and professional, while demonstrating strong web design and development craft. The user approved the photo-led layout, then explicitly pinned cream and dark grey and asked to restore its elegant, premium feel. Use refined editorial serif display type with compact, legible sans-serif UI; avoid blue surfaces and oversized headlines. A monogram, if used, must clearly read MA rather than AA; a monogram is not mandatory.
+Maeve Arden Photography is the confirmed brand name. The identity should be modern, sleek and professional, while demonstrating strong web design and development craft. The user approved the photo-led layout, then explicitly pinned cream and dark grey and asked to restore its elegant, premium feel. Use refined editorial serif display type with compact, legible sans-serif UI; avoid blue surfaces and oversized headlines. A monogram, if used, must clearly read MA rather than AA; the user has now requested a logo. Use the outlined Bodoni Moda MA lockup with the full name and Photography descriptor, its narrow-screen wordmark, and the matching favicon.
 
 ## Evidence on Hand
 

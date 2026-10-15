@@ -149,11 +149,11 @@ Bodoni Moda is a local 14,556-byte Latin WOFF2, normal Roman 400, using the sour
 
 ### Hierarchy
 
-- **Home display:** 36–46px fluid desktop scale, line-height 1.12; 32px on mobile. Keep the explicit two-part sentence compact above the photographs.
+- **Home display:** 36–46px fluid desktop scale, line-height 1.12; 26–32px on mobile. Keep the explicit two-part sentence compact above the photographs.
 - **Page titles:** 34–46px desktop scale, 32px on mobile; line-height 1.15.
 - **Section headlines:** 29–37px base scale; supporting local headings use 28–30px.
 - **Content titles:** serif journal titles use 26–28px and collection names 31px (29px mobile).
-- **Wordmark:** Bodoni Moda 400, 33px desktop and 31px at widths up to 900px, line-height 1.1, tracking -.025em. Its descriptive second line stays Geologica 11px.
+- **Wordmark:** outlined Bodoni Moda 400 and a Geologica 400 Photography descriptor. The primary SVG is 450×96, rendered in a 260×56px slot, or 238×54px on phones. Screens up to 360px use the 360×96 name-only wordmark in a 190–228×54px slot. Descriptor size stays at least 11px.
 - **Body:** Geologica 300, 16px / 1.65, with supporting passages at 14–15px. Article text uses 16px / 1.85, 15px on mobile, bounded to 70ch.
 - **UI:** Geologica for navigation, labels, buttons, forms and metadata. Small functional headings in the gallery, image viewer, menu, enquiry panel and experience steps remain sans serif. The enquiry panel headings are 25px, 23px mobile.
 - **Tracking:** serif headings use -.015em; small UI roles retain their local tracking. Display emphasis stays upright.
@@ -177,7 +177,7 @@ Desktop gallery photographs retain their native proportions in two columns (52px
 
 ## Elevation & Depth
 
-The system is flat at rest. Tonal fields, scale and borders establish hierarchy. The full-screen viewer and navigation dialog use native modal behavior; the navigation backdrop is a translucent deep ink field (`rgb(13 31 42/.65)`). No recurring content card uses a shadow.
+The system is flat at rest. Tonal fields, scale and borders establish hierarchy. The full-screen viewer and navigation dialog use native modal behavior; the navigation backdrop is a translucent deep ink field (`rgb(24 23 21/.65)`). No recurring content card uses a shadow.
 
 ### Shadow Vocabulary
 
@@ -189,7 +189,7 @@ The system is flat at rest. Tonal fields, scale and borders establish hierarchy.
 
 Interface panels, buttons, rules and image frames use square geometry. Text fields explicitly use the `square` corner token. Place-selection indicators use the circular `indicator` token; they are functional selected-state marks. Thin strokes (1px) define controls and dividers; selected gallery filters and invalid inputs use stronger strokes (2px).
 
-The header and footer use the full-name wordmark. The separate favicon draws an unmistakable MA in a small warm-blue asset; its rounded asset boundary is not a card or button radius. UI icons are small inline SVG strokes.
+The header and footer use the serif MA plus full-name SVG lockup. The M and A remain separate for immediate recognition. Narrow screens use the name-only wordmark. The favicon uses the same MA with stronger hairlines on cream. Logo lettering is outlined, with no external font or raster dependency. UI icons are small inline SVG strokes.
 
 ## Components
 
@@ -197,9 +197,9 @@ The header and footer use the full-name wordmark. The separate favicon draws an 
 
 Compact, direct actions use a solid tonal rectangle.
 
-- **Primary:** ink-blue fill and paper text, minimum height (48px), with `button-primary` padding. Hover uses `button-primary-hover` over a short background transition (180ms).
-- **Light:** paper fill on a charcoal field; hover changes to lake blue. The closing invitation deliberately presents the normal primary color assignment even though its markup shares the light-button modifier.
-- **Outline:** transparent fill, blue text and a blue border; hover fills blue and reverses the text.
+- **Primary:** charcoal fill and paper text, minimum height (48px), with `button-primary` padding. Hover uses `button-primary-hover` over a short background transition (180ms).
+- **Light:** paper fill on a charcoal field; hover changes to cream. The closing invitation deliberately presents the normal primary color assignment even though its markup shares the light-button modifier.
+- **Outline:** transparent fill, charcoal text and a charcoal border; hover fills charcoal and reverses the text.
 - **Small:** header actions use a minimum height (44px) and padding (10px 20px).
 - **Text:** underlined labels, a minimum height (44px), and an underline offset (5px). The next-story link includes the words “Next story” in the link and underlines its heading with an offset (7px).
 - **Focus:** interactive elements use a visible outline (2px solid currentColor), offset (5px). Disabled buttons use reduced opacity (.6) and the waiting cursor.
@@ -255,3 +255,7 @@ Journal items use unboxed photographs and titles; home article metadata follows 
 - Don't promote hidden legacy eyebrow markup, decorative numbering or text-arrow characters into new component conventions.
 
 Not canonized: hidden legacy eyebrow and numbering hooks, plus text-arrow characters in a few utility and form links, are not a reusable visual vocabulary. This documentation records the frozen implementation; it does not repair UI source.
+
+## Logo assets
+
+The primary and reversed SVG lockups, narrow wordmark, monogram and matching favicon live under assets/icons. Bodoni Moda and Geologica glyphs are converted to paths, preserving the supplied typefaces and local OFL licenses. scripts/brand-assets.py recreates these committed assets with development-only fontTools and Brotli; ordinary site generation needs neither dependency. The small favicon is optically strengthened. Keep its M/A separation and avoid stretching the SVG. The 404 embeds the narrow vector directly, preserving recovery branding at nested URLs.

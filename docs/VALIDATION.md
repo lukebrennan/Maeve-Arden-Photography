@@ -51,3 +51,8 @@ Independent Impeccable finish review: **ship**. All 19 final captures were valid
 ## Cream and charcoal refinement
 
 At the user's request, restored cream (#f7f5ef), ivory and dark grey, retaining the approved photographic folio. Added local Bodoni Moda Roman 400 for the full-name wordmark and editorial headings; Geologica remains the body and functional UI face. The additional WOFF2 is 14,556 bytes. Mobile titles are restrained at 32px. Form boundary contrast was strengthened with a separate control token. Body, muted text, inverse text and form boundaries pass their applicable contrast thresholds. No interactions, photographs or factual content changed.
+
+
+## Serif logo
+
+Added an outlined Bodoni Moda MA/full-name lockup, narrow wordmark and matching strengthened favicon. All15 page paths and metadata pass verification. Browser captures at1440,487,390 and320px confirm the correct responsive logo asset, loaded SVG, clear navigation and no horizontal overflow; mobile menu opens and closes. The mobile home display scale now adapts from26 to32px to preserve restrained line wrapping. SVG exports contain no text/font dependency or raster embeds. Transparent PNG and reversed exports accompany the vector originals in the download pack.
