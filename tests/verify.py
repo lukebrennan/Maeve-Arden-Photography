@@ -72,7 +72,7 @@ sitemap = ET.parse(ROOT / 'sitemap.xml')
 locations = [node.text for node in sitemap.findall('.//{*}loc')]
 if len(locations) != len(documents)-1: errors.append('Sitemap should contain all pages except the 404')
 for location in locations:
-    if not location.startswith('https://lukebrennan.github.io/Maeve-Arden-Photography/'):
+    if not location.startswith('https://maeveardenphotography.co.uk/'):
         errors.append(f'Unexpected sitemap URL: {location}')
 manifest = json.loads((ROOT/'assets/images/manifest.json').read_text())
 variants = sum(len(photo.get('variants', [])) for photo in manifest.values())

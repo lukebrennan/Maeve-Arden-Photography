@@ -16,7 +16,7 @@ A fictional wedding-photography brand and working website portfolio piece. Succe
 
 ## Operating Context
 
-A responsive static website hosted publicly on GitHub Pages at https://lukebrennan.github.io/Maeve-Arden-Photography/. The connected source repository is lukebrennan/Maeve-Arden-Photography. Generated HTML is committed; Python templates generate the pages and compact CSS. There is no frontend framework or required installation to view the site.
+A responsive static website hosted publicly on GitHub Pages at https://maeveardenphotography.co.uk/. The connected source repository is lukebrennan/Maeve-Arden-Photography. Generated HTML is committed; Python templates generate the pages and compact CSS. There is no frontend framework or required installation to view the site.
 
 ## Capabilities and Constraints
 

@@ -61,11 +61,29 @@ python3 scripts/prepare-images.py --download
 
 ## GitHub Pages
 
-The Publish website GitHub Actions workflow verifies, exports and deploys dist/ on every main push. Pages uses GitHub Actions as its source. The live address is:
+The Publish website GitHub Actions workflow verifies, exports and deploys dist/ on every main push. Pages uses GitHub Actions as its source. The configured deployment address is:
 
-https://lukebrennan.github.io/Maeve-Arden-Photography/
+https://maeveardenphotography.co.uk/
 
-If the deployment address changes, update `BASE` in `scripts/build.py` and regenerate. The manifest start URL stays relative to the project path.
+If the deployment address changes, update `BASE` in `scripts/build.py` and regenerate. The manifest start URL stays relative to the site root.
+
+### Custom domain connection
+
+Set the custom domain in repository Settings → Pages to `maeveardenphotography.co.uk` before changing DNS. This repository deploys with GitHub Actions, so Pages stores the custom domain in its settings; a CNAME file is not required.
+
+Replace the holding-page apex A record with these four GitHub Pages addresses:
+
+| Type | Host | Value |
+| --- | --- | --- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | lukebrennan.github.io |
+
+Preserve unrelated mail and verification records. After DNS validates and GitHub issues the certificate, enable Enforce HTTPS. Check the apex, www redirect, a nested article and the 404 recovery links. DNS propagation and certificate issuance can take up to 24 hours.
+
+Reference: [GitHub Pages custom domain documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 
 ## Form behaviour
 

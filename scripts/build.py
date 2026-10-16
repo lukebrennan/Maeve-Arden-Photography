@@ -6,7 +6,7 @@ import re
 import hashlib
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = 'https://lukebrennan.github.io/Maeve-Arden-Photography/'
+BASE = 'https://maeveardenphotography.co.uk/'
 LOGO_VERSION = hashlib.sha256(b''.join((ROOT/'assets/icons'/name).read_bytes() for name in ('maeve-arden-logo.svg','maeve-arden-wordmark.svg'))).hexdigest()[:8]
 FAVICON_VERSION = hashlib.sha256((ROOT/'assets/icons/favicon.svg').read_bytes()).hexdigest()[:8]
 
